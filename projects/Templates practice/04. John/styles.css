@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 1152px;
+    margin: 0 auto;
+    font-family: 'Heebo', sans-serif;
+    border: 1px solid red;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px; 
+}
+h1 {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+h3 {
+    font-size: 26px;
+    font-weight: 700;
+}
+.container {
+    margin: 0 auto;
+    margin-left: 146px;
+    margin-right: 60px;
+}
+.navwrap {
+    height: 96px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.navwrap__links a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 40px;
+}
+.about-me {
+    padding-top: 112px;
+    padding-bottom: 68px;
+}
+.about-me__inner img {
+    float: right;
+    margin-right: 90px;
+    margin-left: 115px;
+    width: 243px;
+}
+.about-me__inner h6 {
+    margin-top: 39px;
+}
+.button-download-resume {
+    margin-top: 37px;
+    background-color: #FF6464;
+    width: 209px;
+    height: 48px;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4;
+    border: none;
+}
+/*Recent posts*/
+.recent-posts {
+    background-color: #EDF7FA;
+}
+.recent-posts__inner {
+    display: flex;
+    width: 856px;
+}
+.recent-posts__left-col{
+    width: 418px;
+    margin-right: 19px;
+}
+.recent-posts__right-col {
+    width: 418px;
+}
+.left-col-recent-posts__caption {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 2.7;
+}
+.recent-posts-box {
+    background-color: white;
+    padding-left: 24px;
+    padding-top: 25px;
+    padding-bottom: 8px;
+    margin-bottom: 40px;
+    height: 294px;
+}
+.recent-posts-box__heading {
+    margin-bottom: 17px;
+    line-height: 1.5;
+}
+.recent-posts-box div {
+    margin-bottom: 11px;
+    line-height: 1.5;
+    font-size: 18px;
+}
+.recent-posts-box span {
+    display: inline-block;
+}
+.right-line {
+    content: '';
+    display: block; 
+    width: 1px;
+    height: 21px;
+    background-color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.right-col-recent-posts__caption {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 59px;
+}
+.right-col-recent-posts__caption a {
+    text-decoration: none;
+    color: #00A8CC;
+    padding-top: 18px;
+    padding-bottom: 19px;
+}
+
+/*FEATURED*/
+.featured-works {
+    margin-bottom: 82px;
+}
+.featured-works__wrap {
+    display: block;
+    width: 856px;
+    margin: 0 auto;
+}
+.featured-works-row {
+    border-bottom: 1px solid #E0E0E0;
+}
+.featured_works_row1 {
+    padding-bottom: 15px;
+}
+.featured_works_row2 {
+    margin-top: 50px;
+    padding-bottom: 40px;
+}
+.featured_works_row3 {
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+.row-inner__caption {
+    font-size: 22px;
+    line-height: 2.7;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgba(33, 36, 61, 0.2);
+}
+.row-inner__img {
+    float: left;
+    margin-right: 18px;
+    width: 246px;
+}
+.row-inner__heading {
+    margin-top: -20px;
+    font-size: 30px;
+    line-height: 44px;
+    font-weight: 700;
+}
+.row1_heading1 {
+    margin-top: -30px;
+}
+.row-inner__heading2 {
+    font-size: 30px;
+    line-height: 44px;
+    font-weight: 700;
+}
+.row-inner__year-type {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.row-inner__year {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: #142850;
+    color: white;
+    padding: 0px 10px;
+    border-radius: 20px;
+    margin-right: 25px;
+}
+.row-inner__type {
+    font-size: 20px;
+    line-height: 29px;
+    color: #8695A4;
+}
+.row-inner__text {
+    line-height: 23px;
+}
+
+/*FOOTER*/
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 181px;
+}
+.footer__inner {
+    display: block;
+    width: 135px;
+}
+.contacts__icons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26px;
+}
+.footer__copyright {
+    font-size: 14px;
+    line-height: 21px;    
+}

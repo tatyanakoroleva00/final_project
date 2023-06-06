@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 24px;
+    font-weight: 300; 
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 250px;
+}
+h2 {
+    font-weight: 400; 
+    font-size: 72px;
+}
+h3 {
+    font-weight: 400;
+    font-size: 32px;
+}
+h4 {
+    font-weight: 300;
+    font-size: 32px;
+}
+h6 {
+    font-weight: 300; 
+    font-size: 24px;
+}
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    background-color: #F8F8F8;
+}
+.container_wrap {
+    width: 1174px;
+    margin: 0 auto;
+}
+.page_1 {
+    display: flex;
+    justify-content: row;
+}
+.left_column {
+    display: block;
+    padding-top: 104px;
+}
+.left_column h6 {
+    margin-bottom: 53px;
+}
+.left_column h1 {
+    margin-bottom: 43px;
+    line-height: 0.92;
+}
+.left_column h4 {
+    line-height: 1.55;
+    width: 575px;
+    margin-bottom: 61px;
+}
+.buy_button {
+    width: 278px;
+    height: 82px;
+    background-color: #161515;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 300;
+    font-size: 32px;
+    font-family: 'League Spartan', sans-serif;
+}
+.left_column span {
+    width: 143px;
+    height: 82px;
+    background-color: white;
+    text-align: center;
+    padding: 31px 28px;
+    font-size: 32px;
+    font-weight: 300;
+}
+.right_column {
+    display: block;
+    margin-left: 40px;
+}
+.right_column img {
+    height: 720px;
+    width: 408px;
+    margin-bottom: 176px;
+}
+
+/* Page 2 */
+
+.page_2 {
+    display: block;
+    text-align: center;
+    padding-top: 43px;
+    width: 100%;
+}
+.page_2 h6 {
+    line-height: 1.8;
+}
+.page_2 h2 {
+    line-height: 1.1;
+}
+.content {
+    width: 531px;
+    margin: 84px auto 65px auto;
+}
+.pic2 {
+    padding: 110px 60px 110px 71px;
+    background-color: #F8F8F8;
+    margin-bottom: 67px;
+}
+.content h3 {
+    margin-bottom: 17px;
+}
+.content h4 {
+    line-height: 1.55;
+}
+/*Content with Pic 3*/
+.content2 {
+    width: 500px;
+    margin: 0 auto;
+}
+.pic3 {
+    margin: 0 auto 67px auto ;
+    background-color: #F8F8F8;
+    padding: 65px 0px;
+}
+.content2 h4 {
+    height: 196px;
+    margin-bottom: 59px;
+}
+
+.product_descr {
+    margin: 59px auto 120px auto;
+    display: block;
+}
+.product_descr p:first-child {
+    font-weight: 400;
+    font-size: 32px;
+}
+.product_descr p:first-child::after {
+    content: '';
+    display: block;
+    background-color: black;
+    width: 178px;
+    height: 1px;
+    margin: 9px auto 49px auto;
+}
+.product_descr p:last-child {
+    width: 515px;
+    font-size: 24px;
+    line-height: 1.7;
+    font-weight: 300;
+    margin: 0 auto;
+}
+.product_descr a {
+    color: #BB8B5D;
+    font-weight: bold;
+}

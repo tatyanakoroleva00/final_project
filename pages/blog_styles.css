@@ -1,0 +1,126 @@
+html {
+    font-size: 60%;
+    /*background-color: rgb(22, 23, 30);*/
+    /*background-image: url('../img/back1.avif');*/
+    /*background-position: left -50% top -10%;*/
+    /*background-size: 100%;*/
+    /*background-size: 100%;*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 16px - 100%  */
+/* 10px - 62.5% */
+/* 1rem = 16px  */
+/* 1rem = 10px  */
+
+body {
+    box-sizing: border-box;
+    background-image: url('img/cover.jpg');
+    background-attachment: fixed;
+    background-size: 100%;
+    /*background-position: top 50% left 20%;*/
+    /*background-color: rgba(184, 81, 81, 0.1);*/
+    color: rgba(255, 255, 255, 0.812);
+    font-family: 'Comic Neue', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    position: relative;
+    cursor: default;
+    font-size: 2.4rem;
+}
+
+.container {
+    max-width: 150rem;
+    margin: 0 auto;
+}
+h1 {
+    color: white;
+    font-size: 8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.blog-page {
+    color: white;
+    max-width: 170rem;
+    margin: 5rem auto;
+    /*background-color: rgb(28, 29, 37);*/
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+.home-link {
+    position: fixed;
+    padding-left: 1rem;
+}
+.header {
+    max-width: 170rem;
+    font-family: 'Comic Neue', sans-serif;
+}
+
+.blog__column {
+    width: 120rem;
+    background-color: rgb(28, 29, 37);
+    background-color: rgba(28, 29, 37, 0.1);
+    background-color: rgb(22, 23, 30);
+    margin: 0 auto;
+    justify-content: flex-start;
+}
+.blog__item {
+    margin-bottom: 2rem;
+    border: 1px solid white;
+    padding: 5rem 3rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    cursor: text;
+}
+.col1 {
+    width: 12%;
+}
+.col2 {
+    width: 30%;
+}
+.col3{
+    width: 58%;
+}
+.blog__item-date {
+    font-size: 2rem;
+    cursor: text;
+}
+.blog__item-image {
+    width: 100%;
+    cursor: default;
+}
+.blog__item-descr {
+    margin-bottom: 1rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.1rem;
+    color: #b4b4c5;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    cursor: text;
+}
