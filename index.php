@@ -39,7 +39,7 @@ $posts = Posts::getLimitedNumberOfPosts();
                             <li class="menu__list-item"><a class="menu__link lng-portfolio" href="#portfolio">PORTFOLIO</a></li>
                             <li class="menu__list-item"><a class="menu__link lng-blog" href="#blog">BLOG</a></li>
                             <li class="menu__list-item"><a class="menu__link" href="mailto:tatianakoroleva_work@mail.ru"><img class="menu__send-email" src="img/icons/mail.png" alt="mail me"></a></li>
-                            <li class="menu__list-item"><a class="menu__link menu__link--alter-ego lng-alter-ego" href="projects/3. AlterEgo - personal site/index.html">ALTER EGO></a></li>
+                            <li class="menu__list-item"><a class="menu__link menu__link--alter-ego lng-alter-ego" href="#">ALTER EGO></a></li>
                             <li class="menu__list-item"><select class="change-lang">
                                     <option class="rus-lang" value="ru">RU</option>
                                     <option class="eng-lang" value="en" selected>EN</option>
@@ -210,7 +210,7 @@ $posts = Posts::getLimitedNumberOfPosts();
                 <div class="portfolio__gallery portfolio__gallery--templates" id="templates-gallery">
                     
                     <div class="portfolio__gallery-item proj1">
-                        <div class="portfolio__item project-col1"><a href="../Templates%20practice/01.%20Template%20-%20MoGo/index.html" target="_blank">
+                        <div class="portfolio__item project-col1"><a href="projects/Templates practice/01. Template - MoGo/index.html" target="_blank">
                             <div class="portfolio__img-box"><img class="portfolio__img first-img" src="img/tiny_pics_portfolios/mogo1.jpg" alt="project1"></div>
                             
                             <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/mogo2.jpg" alt="project1"></div>
@@ -250,7 +250,7 @@ $posts = Posts::getLimitedNumberOfPosts();
                     
 
                     <div class="portfolio__gallery-item proj2">
-                        <div class="portfolio__item project-col2"><a href="../Templates%20practice/03.%20Template%20-%20Pipernet%20is%20here/index.html" target="_blank">
+                        <div class="portfolio__item project-col2"><a href="projects/Templates practice/02. Template - Watches/index.html" target="_blank">
                             <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/PiperNet1.jpg" alt="project2"></div>
                             <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/PiperNet2.jpg" alt="project2"></div></a>
                             <button class="portfolio__left-arrow">&lt;</button>
@@ -268,7 +268,7 @@ $posts = Posts::getLimitedNumberOfPosts();
 
 
                     <div class="portfolio__gallery-item proj3">
-                        <div class="portfolio__item project-col3"><a href="../Templates%20practice/04.%20John/index.html" target="_blank">
+                        <div class="portfolio__item project-col3"><a href="projects/Templates practice/03. Template - Pipernet is here/index.html" target="_blank">
                             <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/John1.jpg" alt="project3"></div>
                             <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/John2.jpg" alt="project3"></div></a>
                             <button class="portfolio__left-arrow">&lt;</button>
@@ -286,11 +286,11 @@ $posts = Posts::getLimitedNumberOfPosts();
                     </div>
                     
                     <div class="portfolio__gallery-item proj4">
-                        <div class="portfolio__item project-col4"><a href="../Templates%20practice/02.%20Template%20-%20Watches/index.html" target="_blank">
-                            <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/Watch1.jpg" alt="project4"></div>
-                            <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/Watch2.jpg" alt="project4"></div>
-                            <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/Watch3.jpg" alt="project4"></div>
-                            <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/Watch4.jpg" alt="project4"></div></a>
+                        <div class="portfolio__item project-col4"><a href="projects/Templates practice/04. John/index.html" target="_blank">
+                            <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/watch1.jpg" alt="project4"></div>
+                            <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/watch2.jpg" alt="project4"></div>
+                            <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/watch3.jpg" alt="project4"></div>
+                            <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/watch4.jpg" alt="project4"></div></a>
                             <button class="portfolio__left-arrow">&lt;</button>
                             <button class="portfolio__right-arrow">&gt;</button>
                         </div>
@@ -356,7 +356,7 @@ $posts = Posts::getLimitedNumberOfPosts();
             <input class="contact__form-submit" type="submit" value="Send">
         </form>
           <img class="lamp" src="img/1.png" alt="lamp">
-          <div class="light" animation></div>
+          <div class="light animation"></div>
           <div class="lamp-message">You are most welcome to send me a message</div>
       </div>
     </section>

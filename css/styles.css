@@ -787,7 +787,7 @@ body {
 /**********************************MEDIAS*****************************/
 
 
-@media screen and (max-width: 36rem) {
+@media screen and (max-width: 40rem) { /*36*/
   html {
     font-size: 43%;
     font-family: Arial, sans-serif;

@@ -5,7 +5,6 @@ const dropdownContentProducts = document.querySelector('.dropdown-content--produ
 const glassAndSearch = document.querySelector('.glass_search ');
 const searchBar = document.querySelector('.search-bar input');
 
-
 /***********************DROPDOWN CATEGORIES****************/
 function showAndhideDropdownCategories() {
 dropdownBtnCategories.addEventListener('click', () => {
