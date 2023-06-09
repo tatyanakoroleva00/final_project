@@ -1,5 +1,5 @@
 <?php
-require '../../2. Online store - portfolio/models/DBConnect.php';
+require 'DBConnect.php';
 
 $rooms = $_GET('room_name');
 d($rooms);

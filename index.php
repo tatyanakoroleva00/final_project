@@ -2,7 +2,9 @@
 require 'models/Posts.php';
 $posts = Posts::getLimitedNumberOfPosts();
 
-//if($_POST[])
+//require 'pages/form_send.php';
+/*********** SENDING EMAIL - the same page************/
+
 ?>
 
 <!DOCTYPE html>
@@ -237,7 +239,7 @@ $posts = Posts::getLimitedNumberOfPosts();
                         </div>
                             
                         <div class="portfolio__item-descr">
-                        <a class="portfolio__item-descr-link" href="https://github.com/tatyanakoroleva00/final_project/tree/main/projects/Templates%20practice/01.%20Template%20-%20MoGo" target="_blank"><h5 class="portfolio__item-title">#4."Welcome To Mogo" (2023)</h5></a><br>
+                        <a class="portfolio__item-descr-link" href="https://github.com/tatyanakoroleva00/final_project/tree/main/projects/Templates_practice/01.Template_Mogo" target="_blank"><h5 class="portfolio__item-title">#4."Welcome To Mogo" (2023)</h5></a><br>
                             <p>This multi-pages project, I consider to be the one which shows the growth in coding skills.
                                 It gave me the vast knowledge in HTML / CSS layout, and also gave me the vision of real websites.
                                 I used absolute and relative positions to place items one on another, opacity and filters. There were repetitive sections, flex-boxes,
@@ -258,7 +260,7 @@ $posts = Posts::getLimitedNumberOfPosts();
                         </div>
 
                         <div class="portfolio__item-descr">
-                            <a class="portfolio__item-descr-link" href="https://github.com/tatyanakoroleva00/portfolios/tree/7a1d0c0777d2ed181784e242da5a4c648f91bbd4/Templates%20practice/03.%20Template%20-%20Pipernet%20is%20here" target="_blank"><h5 class="portfolio__item-title">#3."PiperNet Is Here" (2023)</h5></a><br>
+                            <a class="portfolio__item-descr-link" href="https://github.com/tatyanakoroleva00/final_project/tree/main/projects/Templates_practice/03.Template_Pipernet_is_here" target="_blank"><h5 class="portfolio__item-title">#3."PiperNet Is Here" (2023)</h5></a><br>
                             <p>It was my first project that I found while doing my HTML / CSS layout course. I made it in 2021 for first time.
                                 But in 2023, I've decided to try to do it again. I got acquainted with the flex layout.
                                 My coding was more conscious. I've learnt about 100% heading and containers.
@@ -276,7 +278,7 @@ $posts = Posts::getLimitedNumberOfPosts();
                         </div>
 
                         <div class="portfolio__item-descr">
-                            <a class="portfolio__item-descr-link"  href="https://github.com/tatyanakoroleva00/portfolios/tree/7a1d0c0777d2ed181784e242da5a4c648f91bbd4/Templates%20practice/04.%20John" target="_blank"><h5 class="portfolio__item-title">#2."John" (2022)</h5></a><br>
+                            <a class="portfolio__item-descr-link"  href="https://github.com/tatyanakoroleva00/final_project/tree/main/projects/Templates_practice/04.John" target="_blank"><h5 class="portfolio__item-title">#2."John" (2022)</h5></a><br>
                             <p>This project gave me an idea of the responsive design. What I learned was auto margin,
                                 nav panel, positioning of an image and text aside, download resume button, flex-boxing
                                 applied to posts. The section "featured" taught me to place image to the left of the text,
@@ -286,7 +288,7 @@ $posts = Posts::getLimitedNumberOfPosts();
                     </div>
                     
                     <div class="portfolio__gallery-item proj4">
-                        <div class="portfolio__item project-col4"><a href="projects/Templates_practice/04.John/index.html" target="_blank">
+                        <div class="portfolio__item project-col4"><a href="projects/Templates_practice/02.Template_Watches/index.html" target="_blank">
                             <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/watch1.jpg" alt="project4"></div>
                             <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/watch2.jpg" alt="project4"></div>
                             <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/watch3.jpg" alt="project4"></div>
@@ -296,7 +298,7 @@ $posts = Posts::getLimitedNumberOfPosts();
                         </div>
                     
                         <div class="portfolio__item-descr no-overflow">
-                            <a class="portfolio__item-descr-link"  href="https://github.com/tatyanakoroleva00/portfolios/tree/7a1d0c0777d2ed181784e242da5a4c648f91bbd4/Templates%20practice/02.%20Template%20-%20Watches" target="_blank"><h5 class="portfolio__item-title">#1."Watches" (2022)</h5></a><br>
+                            <a class="portfolio__item-descr-link"  href="https://github.com/tatyanakoroleva00/final_project/tree/main/projects/Templates_practice/02.Template_Watches" target="_blank"><h5 class="portfolio__item-title">#1."Watches" (2022)</h5></a><br>
                             <p>This website template represented to me the vision of a commercial website. I have
                                 got acquainted with margins, several pages website, vertical and horizontal page viewing, repetitive sections.  </p>
                         </div>
@@ -314,7 +316,7 @@ $posts = Posts::getLimitedNumberOfPosts();
                             
                         </div>
                         <div class="portfolio__item-descr">
-                            <a class="portfolio__item-descr-link" href="https://github.com/tatyanakoroleva00/final_project/tree/main/projects/2.%20Online%20store%20-%20portfolio" target="_blank"><h5 class="portfolio__item-title">#1."Domium Solatium" (2023)</h5></a><br>
+                            <a class="portfolio__item-descr-link" href="https://github.com/tatyanakoroleva00/final_project/tree/main/projects/Online_store" target="_blank"><h5 class="portfolio__item-title">#1."Domium Solatium" (2023)</h5></a><br>
                             <p>This is my first invented portfolio Online Store. Here, I wanted to show my knowledge of FrontEnd and BackEnd all together.
                                 What was new for me: small icons in nav menu, design creation for the shop, best solutions finding for transparent buttons
                                 (colors, fonts, arrows). Search bar, shopping cart, favourites, login / registration icons.
@@ -348,11 +350,10 @@ $posts = Posts::getLimitedNumberOfPosts();
       <div class="container">
           <h3  class="title contact__title">. CONTACT ME </h3>
 <!--            here <img class="contact__image" src="img/icons/inc-feather.png" alt="contact form"></h3>-->
-          <form class="contact__form" action="mailto:tatianakoroleva_work@mail.ru" method="post" enctype="text/plain">
-            <input class="contact__form-input" name="Name: " type="text"  placeholder="Name" required>
-            <input class="contact__form-input" name="Email: : " type="email"  placeholder="Email address" required>
-            <textarea class="contact__form-textarea" name="Message:  " placeholder="Your Message" rows="10" style="resize: none;"  required></textarea>
-            <input type="hidden">
+          <form class="contact__form" action="pages/form_send.php" method="post">
+            <input class="contact__form-input" name="Name" type="text"  placeholder="Name" required>
+            <input class="contact__form-input" name="Email" type="email"  placeholder="Email address" required>
+            <textarea class="contact__form-textarea" name="Message" placeholder="Your Message" rows="10" style="resize: none;"  required></textarea>
             <input class="contact__form-submit" type="submit" value="Send">
         </form>
           <img class="lamp" src="img/1.png" alt="lamp">

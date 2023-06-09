@@ -1,7 +1,6 @@
 <?php
-require '../../../models/DBConnect.php';
+require 'DBConnect.php';
 
-$categories = $_GET('category_name');
 
 class Categories {
 
@@ -11,9 +10,13 @@ class Categories {
 
         $query = "SELECT image
         FROM categories
-        WHERE category = $categories;";
+        WHERE category = ?;";
 
-        return $pdo->query($query)->fetchAll();
+        $categories = $_GET('category_name');
+
+        $result = $pdo->prepare($query);
+        $result->execute([$categories]);
+        return $result->fetchAll();
     }
 
 
