@@ -210,7 +210,7 @@ $posts = Posts::getLimitedNumberOfPosts();
                 <div class="portfolio__gallery portfolio__gallery--templates" id="templates-gallery">
                     
                     <div class="portfolio__gallery-item proj1">
-                        <div class="portfolio__item project-col1"><a href="projects/Templates practice/01. Template - MoGo/index.html" target="_blank">
+                        <div class="portfolio__item project-col1"><a href="projects/Templates_practice/01.Template_Mogo/index.html" target="_blank">
                             <div class="portfolio__img-box"><img class="portfolio__img first-img" src="img/tiny_pics_portfolios/mogo1.jpg" alt="project1"></div>
                             
                             <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/mogo2.jpg" alt="project1"></div>
@@ -237,7 +237,7 @@ $posts = Posts::getLimitedNumberOfPosts();
                         </div>
                             
                         <div class="portfolio__item-descr">
-                        <a class="portfolio__item-descr-link" href="https://github.com/tatyanakoroleva00/portfolios/tree/7a1d0c0777d2ed181784e242da5a4c648f91bbd4/Templates%20practice/01.%20Template%20-%20MoGo" target="_blank"><h5 class="portfolio__item-title">#4."Welcome To Mogo" (2023)</h5></a><br>
+                        <a class="portfolio__item-descr-link" href="https://github.com/tatyanakoroleva00/final_project/tree/main/projects/Templates%20practice/01.%20Template%20-%20MoGo" target="_blank"><h5 class="portfolio__item-title">#4."Welcome To Mogo" (2023)</h5></a><br>
                             <p>This multi-pages project, I consider to be the one which shows the growth in coding skills.
                                 It gave me the vast knowledge in HTML / CSS layout, and also gave me the vision of real websites.
                                 I used absolute and relative positions to place items one on another, opacity and filters. There were repetitive sections, flex-boxes,
@@ -250,7 +250,7 @@ $posts = Posts::getLimitedNumberOfPosts();
                     
 
                     <div class="portfolio__gallery-item proj2">
-                        <div class="portfolio__item project-col2"><a href="projects/Templates practice/02. Template - Watches/index.html" target="_blank">
+                        <div class="portfolio__item project-col2"><a href="projects/Templates_practice/03.Template_Pipernet_is_here/index.html" target="_blank">
                             <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/PiperNet1.jpg" alt="project2"></div>
                             <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/PiperNet2.jpg" alt="project2"></div></a>
                             <button class="portfolio__left-arrow">&lt;</button>
@@ -268,7 +268,7 @@ $posts = Posts::getLimitedNumberOfPosts();
 
 
                     <div class="portfolio__gallery-item proj3">
-                        <div class="portfolio__item project-col3"><a href="projects/Templates practice/03. Template - Pipernet is here/index.html" target="_blank">
+                        <div class="portfolio__item project-col3"><a href="projects/Templates_practice/04.John/index.html" target="_blank">
                             <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/John1.jpg" alt="project3"></div>
                             <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/John2.jpg" alt="project3"></div></a>
                             <button class="portfolio__left-arrow">&lt;</button>
@@ -286,7 +286,7 @@ $posts = Posts::getLimitedNumberOfPosts();
                     </div>
                     
                     <div class="portfolio__gallery-item proj4">
-                        <div class="portfolio__item project-col4"><a href="projects/Templates practice/04. John/index.html" target="_blank">
+                        <div class="portfolio__item project-col4"><a href="projects/Templates_practice/04.John/index.html" target="_blank">
                             <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/watch1.jpg" alt="project4"></div>
                             <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/watch2.jpg" alt="project4"></div>
                             <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/watch3.jpg" alt="project4"></div>
@@ -309,12 +309,12 @@ $posts = Posts::getLimitedNumberOfPosts();
                 <div class="portfolio__gallery portfolio__gallery--pers-proj" id="personal-projects-gallery">
 
                     <div class="portfolio__gallery-item proj">
-                        <div class="portfolio__item pers-proj-col1"><a href="projects/2. Online store - portfolio/index.php" target="_blank">
+                        <div class="portfolio__item pers-proj-col1"><a href="projects/Online_store/index.php" target="_blank">
                             <div class="portfolio__img-box"><img class="portfolio__img" src="img/page_site/online_store.jpg" alt="online store"></div></a>
                             
                         </div>
                         <div class="portfolio__item-descr">
-                            <a class="portfolio__item-descr-link" href="projects/2. Online store - portfolio/index.php" target="_blank"><h5 class="portfolio__item-title">#1."Domium Solatium" (2023)</h5></a><br>
+                            <a class="portfolio__item-descr-link" href="https://github.com/tatyanakoroleva00/final_project/tree/main/projects/2.%20Online%20store%20-%20portfolio" target="_blank"><h5 class="portfolio__item-title">#1."Domium Solatium" (2023)</h5></a><br>
                             <p>This is my first invented portfolio Online Store. Here, I wanted to show my knowledge of FrontEnd and BackEnd all together.
                                 What was new for me: small icons in nav menu, design creation for the shop, best solutions finding for transparent buttons
                                 (colors, fonts, arrows). Search bar, shopping cart, favourites, login / registration icons.
