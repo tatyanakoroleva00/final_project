@@ -1,20 +1,19 @@
 <?php
 require 'DBConnect.php';
 
-$rooms = $_GET('room_name');
-d($rooms);
-
 class Rooms {
+    public static function getFreshIdeasRooms() {
+        $room_name = $_GET['room_name'];
 
-    public static function getAllRoomsItems() {
         $pdo = DBConnect::getConnection();
 
-        $query = "SELECT image
+        $query = "SELECT image, type, name
         FROM rooms
-        WHERE category = ?;";
+        WHERE type = 'horizontal' 
+        AND name = ?;";
 
         $result = $pdo->prepare($query);
-        $result->execute([$rooms]);
-        return $result -> fetchAll();
+        $result->execute([$room_name]);
+        return $result->fetchAll();
     }
 }

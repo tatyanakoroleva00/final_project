@@ -2,9 +2,6 @@
 require 'models/Posts.php';
 $posts = Posts::getLimitedNumberOfPosts();
 
-//require 'pages/form_send.php';
-/*********** SENDING EMAIL - the same page************/
-
 ?>
 
 <!DOCTYPE html>

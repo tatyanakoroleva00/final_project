@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Июн 08 2023 г., 22:13
+-- Время создания: Июн 10 2023 г., 21:54
 -- Версия сервера: 10.4.28-MariaDB
 -- Версия PHP: 8.2.4
 
@@ -57,52 +57,97 @@ CREATE TABLE `categories` (
   `name` varchar(255) DEFAULT NULL,
   `short_descr` varchar(255) DEFAULT NULL,
   `full_descr` text DEFAULT NULL,
-  `image` text DEFAULT NULL
+  `image` text DEFAULT NULL,
+  `type` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Дамп данных таблицы `categories`
 --
 
-INSERT INTO `categories` (`id`, `name`, `short_descr`, `full_descr`, `image`) VALUES
-(1, 'furniture', '', '', 'furniture/1.jpg'),
-(2, 'textiles', '', '', 'textiles/1.jpg'),
-(3, 'decorations', '', '', 'decorations/1.jpg'),
-(4, 'lighting', '', '', 'lighting/1.jpg'),
-(5, 'cozy items', '', '', 'cozy_items/1.jpg'),
-(6, 'cozy items', '', '', 'cozy_items/2.jpg'),
-(7, 'cozy items', NULL, NULL, 'cozy_items/3.jpg'),
-(8, 'cozy items', NULL, NULL, 'cozy_items/4.jpg'),
-(9, 'cozy items', NULL, NULL, 'cozy_items/5.jpg'),
-(10, 'cozy items', NULL, NULL, 'cozy_items/6.jpg'),
-(11, 'decorations', NULL, NULL, 'decorations/2.jpg'),
-(12, 'decorations', NULL, NULL, 'decorations/2.jpg'),
-(13, 'decorations', NULL, NULL, 'decorations/3.jpg'),
-(14, 'decorations', NULL, NULL, 'decorations/4.jpg'),
-(15, 'decorations', NULL, NULL, 'decorations/5.jpg'),
-(16, 'decorations', NULL, NULL, 'decorations/6.jpg'),
-(17, 'decorations', NULL, NULL, 'decorations/7.jpg'),
-(18, 'decorations', NULL, NULL, 'decorations/8.jpg'),
-(19, 'decorations', NULL, NULL, 'decorations/9.jpg'),
-(20, 'decorations', NULL, NULL, 'decorations/10.jpg'),
-(21, 'decorations', NULL, NULL, 'decorations/11.jpg'),
-(22, 'decorations', NULL, NULL, 'decorations/12.jpg'),
-(23, 'decorations', NULL, NULL, 'decorations/13.jpg'),
-(24, 'decorations', NULL, NULL, 'decorations/14.jpg'),
-(25, 'furniture', NULL, NULL, 'furniture/2.jpg'),
-(26, 'furniture', NULL, NULL, 'furniture/3.jpg'),
-(27, 'furniture', NULL, NULL, 'furniture/4.jpg'),
-(28, 'furniture', NULL, NULL, 'furniture/5.jpg'),
-(29, 'furniture', NULL, NULL, 'furniture/6.jpg'),
-(30, 'furniture', NULL, NULL, 'furniture/7.jpg'),
-(31, 'lighting', NULL, NULL, 'lighting/2.jpg'),
-(32, 'lighting', NULL, NULL, 'lighting/3.jpg'),
-(33, 'textiles', NULL, NULL, 'textiles/2.jpg'),
-(34, 'textiles', NULL, NULL, 'textiles/3.jpg'),
-(35, 'textiles', NULL, NULL, 'textiles/4.jpg'),
-(36, 'textiles', NULL, NULL, 'textiles/5.jpg'),
-(37, 'textiles', NULL, NULL, 'textiles/6.jpg'),
-(38, 'textiles', NULL, NULL, 'textiles/7.jpg');
+INSERT INTO `categories` (`id`, `name`, `short_descr`, `full_descr`, `image`, `type`) VALUES
+(1, 'furniture', '', '', 'furniture/1.jpg', 'horizontal'),
+(2, 'textiles', '', '', 'textiles/1.jpg', 'vertical'),
+(3, 'decorations', '', '', 'decorations/1.jpg', 'horizontal'),
+(4, 'lighting', '', '', 'lighting/1.jpg', 'vertical'),
+(5, 'cozy items', '', '', 'cozy_items/1.jpg', 'horizontal'),
+(6, 'cozy items', '', '', 'cozy_items/2.jpg', 'vertical'),
+(7, 'cozy items', NULL, NULL, 'cozy_items/3.jpg', 'vertical'),
+(8, 'cozy items', NULL, NULL, 'cozy_items/4.jpg', 'vertical'),
+(9, 'cozy items', NULL, NULL, 'cozy_items/5.jpg', 'vertical'),
+(10, 'cozy items', NULL, NULL, 'cozy_items/6.jpg', 'vertical'),
+(11, 'decorations', NULL, NULL, 'decorations/2.jpg', 'horizontal'),
+(12, 'decorations', NULL, NULL, 'decorations/12.jpg', 'vertical'),
+(13, 'decorations', NULL, NULL, 'decorations/3.jpg', 'vertical'),
+(14, 'decorations', NULL, NULL, 'decorations/4.jpg', 'horizontal'),
+(15, 'decorations', NULL, NULL, 'decorations/5.jpg', 'horizontal'),
+(16, 'decorations', NULL, NULL, 'decorations/6.jpg', 'horizontal'),
+(17, 'decorations', NULL, NULL, 'decorations/7.jpg', 'horizontal'),
+(18, 'decorations', NULL, NULL, 'decorations/8.jpg', 'horizontal'),
+(19, 'decorations', NULL, NULL, 'decorations/9.jpg', 'vertical'),
+(20, 'decorations', NULL, NULL, 'decorations/10.jpg', 'horizontal'),
+(21, 'decorations', NULL, NULL, 'decorations/11.jpg', 'horizontal'),
+(22, 'decorations', NULL, NULL, 'decorations/12.jpg', 'vertical'),
+(23, 'decorations', NULL, NULL, 'decorations/13.jpg', 'vertical'),
+(24, 'decorations', NULL, NULL, 'decorations/14.jpg', 'vertical'),
+(25, 'furniture', NULL, NULL, 'furniture/2.jpg', 'vertical'),
+(26, 'furniture', NULL, NULL, 'furniture/3.jpg', 'horizontal'),
+(27, 'furniture', NULL, NULL, 'furniture/4.jpg', 'horizontal'),
+(28, 'furniture', NULL, NULL, 'furniture/5.jpg', 'vertical'),
+(29, 'furniture', NULL, NULL, 'furniture/6.jpg', 'horizontal'),
+(30, 'furniture', NULL, NULL, 'furniture/7.jpg', 'horizontal'),
+(31, 'lighting', NULL, NULL, 'lighting/2.jpg', 'horizontal'),
+(32, 'lighting', NULL, NULL, 'lighting/3.jpg', 'horizontal'),
+(33, 'textiles', NULL, NULL, 'textiles/2.jpg', 'horizontal'),
+(34, 'textiles', NULL, NULL, 'textiles/3.jpg', 'vertical'),
+(35, 'textiles', NULL, NULL, 'textiles/4.jpg', 'vertical'),
+(36, 'textiles', NULL, NULL, 'textiles/5.jpg', 'vertical'),
+(37, 'textiles', NULL, NULL, 'textiles/6.jpg', 'vertical'),
+(38, 'textiles', NULL, NULL, 'textiles/7.jpg', 'horizontal'),
+(39, 'decorations', NULL, NULL, 'decorations/13.jpg', 'vertical');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `messages`
+--
+
+CREATE TABLE `messages` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `message` text DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Дамп данных таблицы `messages`
+--
+
+INSERT INTO `messages` (`id`, `name`, `email`, `message`) VALUES
+(19, 'ыфваыва', 'asdkjdsfkjd@mail.ru', 'asdlfsdfjkajsdfsdf'),
+(20, 'ыфваыва', 'asdkjdsfkjd@mail.ru', 'asdlfsdfjkajsdfsdf'),
+(21, 'ыфваыва', 'asdkjdsfkjd@mail.ru', 'asdlfsdfjkajsdfsdf'),
+(22, 'ыфваыва', 'asdkjdsfkjd@mail.ru', 'asdlfsdfjkajsdfsdf'),
+(23, 'ыфваыва', 'asdkjdsfkjd@mail.ru', 'asdlfsdfjkajsdfsdf'),
+(24, 'asdfadsf', 'adfafsdafsd@mail.ru', 'fkajdf;ajsf;ksadj;f'),
+(25, 'Tatiana', 'tatyanakoroleva@mail.ru', 'Hello :)'),
+(26, 'dfgfdg', 'fdgfdgfdg@mail.ru', 'falsjdf\'asjdfklsddsfasdf'),
+(27, 'Tatiana', 'tatyanakoroleva@mail.ru', 'Hello :)'),
+(28, 'asdfasdf', 'asdfasdfdsf@mail.ru', 'sadfsdfsdfdf'),
+(29, 'asdfsdaf', 'asdfadf@mail.ru', 'adfasdfsdafdsf'),
+(30, 'dfgfdg', 'fdgfdgfdg@mail.ru', 'falsjdf\'asjdfklsddsfasdf'),
+(31, 'фывафыва', 'kadjfkdjf@amail.ru', 'akfjakdfj;akdsfsdfsdafds'),
+(32, 'фывафыва', 'kadjfkdjf@amail.ru', 'akfjakdfj;akdsfsdfsdafds'),
+(33, 'asdfasdf', 'asdfasdfdsf@mail.ru', 'sadfsdfsdfdf'),
+(34, 'asdfasdf', 'asdfasdfdsf@mail.ru', 'sadfsdfsdfdf'),
+(35, 'asdfasdf', 'sdafasdf@mail.ru', 'dsfsdfsdf'),
+(36, 'adfasd', 'fasdfasdf@maidfljaf', 'adfadfads'),
+(37, 'adfasd', 'fasdfasdf@maidfljaf', 'adfadfads'),
+(38, 'dfsdf', 'dsfadff@mail.rusajdf', 'asdfadsfsdf'),
+(39, 'Mike', 'Jordan@mail.ru', 'Hello, how are you these days ? \r\n'),
+(40, 'Hello', 'Hello@mail.ru', 'What is up ?'),
+(41, 'hello', 'helo@mail.ru', 'aheloadfj'),
+(42, 'asdfsdf', 'sdfsdf@mail.ru', 'asdfsdfsdfsdf');
 
 -- --------------------------------------------------------
 
@@ -176,7 +221,7 @@ INSERT INTO `rooms` (`id`, `name`, `short_descr`, `full_descr`, `image`) VALUES
 (51, 'living room', '', '', 'living_room/13.jpg'),
 (52, 'living room', '', '', 'living_room/14.jpg'),
 (53, 'living room', '', '', 'living_room/15.jpg'),
-(54, 'living room', '', '', 'living_room/16.jpg');
+(54, 'living room', '', '', 'living_room/13.jpg');
 
 -- --------------------------------------------------------
 
@@ -217,6 +262,12 @@ ALTER TABLE `categories`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Индексы таблицы `messages`
+--
+ALTER TABLE `messages`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Индексы таблицы `rooms`
 --
 ALTER TABLE `rooms`
@@ -242,7 +293,13 @@ ALTER TABLE `blog`
 -- AUTO_INCREMENT для таблицы `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+
+--
+-- AUTO_INCREMENT для таблицы `messages`
+--
+ALTER TABLE `messages`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT для таблицы `rooms`

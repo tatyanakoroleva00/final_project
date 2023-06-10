@@ -1,25 +1,19 @@
 <?php
 require 'DBConnect.php';
 
-
 class Categories {
-
-    public static function getAllCategoriesItems() {
+    public static function getFreshIdeasCategories() {
+        $category_name = $_GET['category_name'];
 
         $pdo = DBConnect::getConnection();
 
-        $query = "SELECT image
+        $query = "SELECT image, type, name
         FROM categories
-        WHERE category = ?;";
-
-        $categories = $_GET('category_name');
+        WHERE type = 'horizontal' 
+        AND name = ?;";
 
         $result = $pdo->prepare($query);
-        $result->execute([$categories]);
+        $result->execute([$category_name]);
         return $result->fetchAll();
+        }
     }
-
-
-
-
-}

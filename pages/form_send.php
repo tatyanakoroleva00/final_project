@@ -17,7 +17,7 @@ VALUES (?, ?, ?);";
     header('Location: ../index.php');
 }
 
-index.php
+
 
 //$user_message = "From: $name, Mail: $email, Message: $message";
 //

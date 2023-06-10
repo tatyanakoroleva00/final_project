@@ -8,7 +8,7 @@
                         <div class="left">
                             <img src="images/living_room/12.jpg" alt="sales-idea" class="object-fit">
                             <div class="on-img-text-1">LIVING ROOM</div>
-                            <button class="on-img-btn-1">FRESH IDEAS
+                            <button class="on-img-btn-1"><a href="rooms.php?room_name=<?= 'living room'?>">FRESH IDEAS</a>
                                 <div class="white-fon"><img class="arrow-east" src="icons/arrow-east.png" alt="arrow link"></div></button>
                         </div>
                         <div class="right">

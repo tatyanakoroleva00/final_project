@@ -29,8 +29,9 @@
 }
 html {
     font-size: 62.5%; /*10px;*/
-    /* background-color: rgba(200, 199, 199, 0.7);  */
+     /*background-color: rgba(200, 199, 199, 0.7);*/
     cursor: default;
+    background-color: rgba(49, 44, 44);
 }
 
 
@@ -46,6 +47,7 @@ a {
 }
 
 body {
+    background-color: white;
     font-size: 1.8rem;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -130,7 +132,7 @@ h4 {
 }
 .favs, .reg-form, .cart {
     height: 4.6rem;
-    padding: 4px;
+    /*padding: 4px;*/
     padding-bottom: 6px;
 }
 .favs:hover, .reg-form:hover, .cart:hover {
@@ -155,7 +157,6 @@ h4 {
     padding-bottom: 2rem;
     padding-left: 1rem;
 }
-
 .dropdown-content--categories,
 .dropdown-content--products {
     flex-direction: column;
@@ -169,11 +170,12 @@ h4 {
 }
 .dropdown-content {
     width: 17rem;
-    padding: 1rem;
 }
-.dropdown-content li {    
-    padding-bottom: 2rem;
+.dropdown-content li {
     font-size: 1.6rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 1rem;
 }
 .dropdown-content li:hover {
     background-color: rgba(128, 128, 128, 0.109);
@@ -193,7 +195,12 @@ h4 {
     margin-bottom: -0.5rem;
     margin-right: 1rem;
 }
-
+.dropdown-content-link {
+    display: block;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+}
 /****************************************************************MAIN*********************************************************************/
 .section1-inner {
     width: 100%;
@@ -406,7 +413,8 @@ h4 {
 	width: 40px;
 }
 .footer-bottom-section {
-	background-color: rgba(49, 44, 44, 0.639); 
+	background-color: rgba(49, 44, 44, 0.639);
+    /*background-color: yellow;*/
     color: rgb(255, 255, 255);
     text-align: center;
     padding-top: 1.5rem;

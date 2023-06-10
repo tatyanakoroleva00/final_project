@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domum Solatium</title>
+    <title><?= $title ?? 'Domum Salatium';?></title>
     <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles_shop.css">
+    <link rel="stylesheet" href="styles/products.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -46,26 +47,26 @@
             <div class="bottom-nav">
                 <div class="bottom-nav__inner-nav">
                     <ul class="bottom-nav dropdown-menu">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="<?=$pages['home'];?>">Home</a></li>
                         <li><a href="#" class="dropdown-menu btn--categories">Categories
                                 <span><img class="arrow-down pointer" src="icons/arrow_down.png" alt="arrow down"></span>
                             </a>
                             <ul class="dropdown-content dropdown-content--categories">
-                                <li><a href="categories.php?category_name=<?= 'furniture'?>" target="_blank"><img class="furniture" src="icons/furniture.png" alt="furniture"> Furniture</a></li>
-                                <li><a href="categories.php?category_name=<?= 'textiles'?>" target="_blank"><img class="textile" src="icons/textile.png" alt="textiles">Textiles</a></li>
-                                <li><a href="categories.php?category_name=<?= 'decorations'?>" target="_blank"><img class="decor" src="icons/decor.png" alt="decorations">Decorations</a></li>
-                                <li><a href="categories.php?category_name=<?= 'lighting'?>" target="_blank"><img class="lighting" src="icons/lighting.png" alt="lighting">Lighting</a></li>
-                                <li><a href="categories.php?category_name=<?= 'cozy items'?>" target="_blank"><img class="cozy" src="icons/cozy.png" alt="cozy items">Cozy Items</a></li>
+                                <li><a class="dropdown-content-link" href="categories.php?category_name=<?= 'furniture'?>"><img class="furniture" src="icons/furniture.png" alt="furniture"> Furniture</a></li>
+                                <li><a class="dropdown-content-link" href="categories.php?category_name=<?= 'textiles'?>"><img class="textile" src="icons/textile.png" alt="textiles">Textiles</a></li>
+                                <li><a class="dropdown-content-link" href="categories.php?category_name=<?= 'decorations'?>"><img class="decor" src="icons/decor.png" alt="decorations">Decorations</a></li>
+                                <li><a class="dropdown-content-link" href="categories.php?category_name=<?= 'lighting'?>"><img class="lighting" src="icons/lighting.png" alt="lighting">Lighting</a></li>
+                                <li><a class="dropdown-content-link" href="categories.php?category_name=<?= 'cozy items'?>"><img class="cozy" src="icons/cozy.png" alt="cozy items">Cozy Items</a></li>
                             </ul>
                         </li>
                         <li><a href="#" class="dropdown-menu btn--products">Rooms
                                 <span><img class="arrow-down pointer" src="icons/arrow_down.png" alt="arrow down"></span></a>
                             <ul class="dropdown-content dropdown-content--products">
-                                <li><a href="rooms.php?room_name=<?= 'bedroom'?>" target="_blank"><img class="bedroom" src="icons/bedroom.png" alt="bedroom">Bedroom</a></li>
-                                <li><a href="rooms.php?room_name=<?= 'kitchen'?>" target="_blank"><img class="kitchen" src="icons/kitchen.png" alt="kitchen" >Kitchen</a></li>
-                                <li><a href="rooms.php?room_name=<?= 'bathroom'?>" target="_blank"><img class="bathroom" src="icons/bathroom.png" alt="bathroom">Bathroom</a></li>
-                                <li><a href="rooms.php?room_name=<?= 'living room'?>" target="_blank"><img class="living-room" src="icons/living-room.png" alt="living room">Living room</a></li>
-                                <li><a href="rooms.php?room_name=<?= 'home office'?>" target="_blank"><img class="home-office" src="icons/home-office.png" alt="home office">Home office</a></li>
+                                <li><a class="dropdown-content-link" href="rooms.php?room_name=<?= 'bedroom'?>"><img class="bedroom" src="icons/bedroom.png" alt="bedroom">Bedroom</a></li>
+                                <li><a class="dropdown-content-link" href="rooms.php?room_name=<?= 'kitchen'?>"><img class="kitchen" src="icons/kitchen.png" alt="kitchen" >Kitchen</a></li>
+                                <li><a class="dropdown-content-link" href="rooms.php?room_name=<?= 'bathroom'?>"><img class="bathroom" src="icons/bathroom.png" alt="bathroom">Bathroom</a></li>
+                                <li><a class="dropdown-content-link" href="rooms.php?room_name=<?= 'living room'?>"><img class="living-room" src="icons/living-room.png" alt="living room">Living room</a></li>
+                                <li><a class="dropdown-content-link" href="rooms.php?room_name=<?= 'home office'?>"><img class="home-office" src="icons/home-office.png" alt="home office">Home office</a></li>
                             </ul>
                         </li>
                         <li><a href="#">About us</a></li>
