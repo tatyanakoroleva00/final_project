@@ -1,3 +1,5 @@
+/*<a target="_blank" href="https://icons8.com/icon/vuDouE2J91Fn/сердце">Сердце</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>*/
+
 .product__ideas-wrap {
     margin-bottom: 5rem;
     display: flex;
@@ -7,7 +9,8 @@
 }
 .product__ideas {
     display: flex;
-    gap: 5rem;
+    gap: 4rem;
+    margin-top: 4rem;
 }
 .product__ideas--left-col {
     display: flex;
@@ -25,6 +28,9 @@
     flex: 3;
 }
 .fresh__ideas {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-left: 5rem;
 }
 .product-ideas__items {
     display: flex;
@@ -32,14 +38,28 @@
     flex-wrap: wrap;
     gap: 5rem;
     width: 100%;
-    padding: 1rem 5rem 5rem 5rem;
+    padding: 5rem 5rem 5rem 5rem;
 }
 .product-ideas__item {
     height: 30rem;
     width: 50rem;
+    position: relative;
 }
 .product-ideas__image {
     width: 50rem;
     height: 30rem;
     object-fit: cover;
+    position: relative;
+}
+.like {
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.like:hover {
+    opacity: 1;
 }
