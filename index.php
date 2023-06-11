@@ -38,7 +38,7 @@ $posts = Posts::getLimitedNumberOfPosts();
                             <li class="menu__list-item"><a class="menu__link lng-portfolio" href="#portfolio">PORTFOLIO</a></li>
                             <li class="menu__list-item"><a class="menu__link lng-blog" href="#blog">BLOG</a></li>
                             <li class="menu__list-item"><a class="menu__link" href="mailto:tatianakoroleva_work@mail.ru"><img class="menu__send-email" src="img/icons/mail.png" alt="mail me"></a></li>
-                            <li class="menu__list-item"><a class="menu__link menu__link--alter-ego lng-alter-ego" href="#">ALTER EGO></a></li>
+                            <li class="menu__list-item"><a class="menu__link menu__link--alter-ego lng-alter-ego" href="projects/AlterEgo_site/index.html">ALTER EGO></a></li>
                             <li class="menu__list-item"><select class="change-lang">
                                     <option class="rus-lang" value="ru">RU</option>
                                     <option class="eng-lang" value="en" selected>EN</option>
