@@ -23,11 +23,24 @@ a {
 /* 1rem = 16px  */
 /* 1rem = 10px  */
 
+h1{
+    font-size: 6rem;
+    margin-bottom: 3rem;
+}
+h3 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+}
+
 body {
     box-sizing: border-box;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     max-width: 192rem;
-    /* width: 170rem; */
     margin: 0 auto;
     /*font-family: 'Indie Flower', cursive;*/
 }
@@ -38,7 +51,6 @@ body {
 .header__nav-wrap {
     width: 170rem;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -52,16 +64,17 @@ body {
 .header__navbar-link {
     cursor: pointer;
     color: black;
-    /*font-weight: bold;*/
     font-size: 2.2rem;
 }
 .logo {
     display: flex;
+    flex-direction: row;
     align-items: center;
     color: black;
     font-size: 5.5rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    margin-top: 0.5rem;
  }
 .header__main-pic {
     height: 80rem;
@@ -69,47 +82,63 @@ body {
     background-size: cover;
     position: relative;
 }
-.bubble {
-    position: absolute;
-    width: 45rem;
-    top: 20rem;
-    left: 25%;
-    z-index: 3;
-}
-.paper{
-    position: absolute;
-    width:50rem;
-    z-index: 4;
-    bottom: 2rem;
-    left: 1rem;
-}
-.note {
-    position: absolute;
-    z-index: 4;
-    color: black;
-    left: -10rem;
-    top: 70%;
-    font-size: 3rem;
-    text-align: center;
-    font-family: 'Indie Flower', cursive;
-    width: 70rem;
-    font-weight: normal;
-}
+
 
 /*****************************************************CREATIVITY*************************/
 
 .creativity {
-    height: 100vh;
     padding-top: 10rem;
     padding-bottom: 10rem;
+    background-color: antiquewhite;
 }
+
+.about-me-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.right-col-lg, .left-col-lg {
+    /*background-color: #dedede;*/
+    background-color: antiquewhite;
+    height: 70rem;
+    width: 80rem;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.34);
+}
+.about-me-container p {
+    font-family: 'Indie Flower', cursive;
+    font-size: 2.5rem;
+}
+
 .creativity__inner {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 5rem;
 }
 .box {
-    background-color: lightgray;
-    width: 40rem;
+    /*background-color: lightgray;*/
+    width: 54rem;
     height: 40rem;
+    /*background-color: antiquewhite;*/
+    /*display: flex;*/
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*background-color: gray;*/
+
+
+}
+
+.left-col-lg {
+    position: relative;
+}
+.image {
+    padding: 2rem 2rem 4rem 2rem;
+    background-color: rgba(255, 255, 255, 0.34);
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
 }

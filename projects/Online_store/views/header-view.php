@@ -36,7 +36,7 @@
                 </div>
                 <div class="top-nav--right">
                     <div><span><img alt="favourites" class="favs pointer" src="icons/favourite.png" height="40px"></span></div>
-                    <div><span><img alt="registration-form" class="reg-form pointer" src="icons/user.png" height="40px"></span></div>
+                    <div><span><a href="login.php"><img alt="registration-form" class="reg-form pointer" src="icons/user.png" height="40px"></a></span></div>
                     <div><span><img alt="shopping-bag" class="cart pointer" src="icons/shopping_bag.png" height="40px"></span></div>
                 </div>
             </div>

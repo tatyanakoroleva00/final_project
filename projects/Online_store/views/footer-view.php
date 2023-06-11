@@ -9,7 +9,7 @@
                 <div class="footer-column footer-column--center">
                     <p class="bold-letters">Contact us: </p>
                     <p><a class="footer-number number" href="tel:+79651112358">+7(965)-111-23-58</a></p>
-                    <p>Monday - Sunday (8am - 6pm)</p>
+                    <p>08:00-18:30 Monday to Friday</p>
                     <p class="bold-letters">Delivery: <span>Russia</span></p>
                 </div>
                 <div class="footer-column footer-column--right">

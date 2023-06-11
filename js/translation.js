@@ -93,57 +93,6 @@ const langArr = {
         "en" : "Certificates",
         "fr" : "Certificats",
     },
-    "education1" : {
-        "ru" : "2023, FULLSTACK курсы. (260 часов) Центр \"Профессионал",
-        "en" : "2023, FULLSTACK courses. (260 hours) Center \"Professional\"",
-        "fr" : "2023, FULLSTACK cours. (260 heures) Centre \"Professionnel\"",
-    },
-    "education2" : {
-        "ru" : "",
-        "en" : "2015, M2 (MBA) “Business, European Management, Languages”",
-        "fr" : "x",
-    },
-    "education3" : {
-        "ru" : "",
-        "en" : "2011, Military Interpreter (lieutenant grade)",
-        "fr" : "x",
-    },
-    "education4" : {
-        "ru" : "",
-        "en" : "2009, M2 “Diplomacy, International Relations”",
-        "fr" : "x",
-    },
-    "education5" : {
-        "ru" : "",
-        "en" : "English Special School",
-        "fr" : "x",
-    },
-    "education1-location" : {
-        "ru" : "",
-        "en" : "Moscow, Russia. ",
-        "fr" : "x",
-    },
-    "education1-location2" : {
-        "ru" : "",
-        "en" : "University of Orleans, France.",
-        "fr" : "x",
-    },
-    "education1-location3" : {
-        "ru" : "",
-        "en" : "Moscow State Linguistic University, Military department, Russia.",
-        "fr" : "x",
-    },
-    "education1-location4" : {
-        "ru" : "",
-        "en" : "Moscow State Linguistic University, Russia.",
-        "fr" : "x",
-    },
-    "education1-location5" : {
-        "ru" : "",
-        "en" : "Moscow, Russia",
-        "fr" : "x",
-    },
-
 
 };
 

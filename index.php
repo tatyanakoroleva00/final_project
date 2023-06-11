@@ -109,16 +109,19 @@ $posts = Posts::getLimitedNumberOfPosts();
                     <div class="about__skillbox-descr">
                         <div id="text1" class="about__skillbox-text about__education">
                             <ul class="about__skillbox-list">
-                                <li class="about__skillbox-list-item lng-education1-location"><span class="special-span lng-education1">2023, FULLSTACK courses. (260hours) Center "Professional" </span>
-                                Moscow, Russia. </li>
-                                <li class="about__skillbox-list-item lng-education2-location" ><span class="lng-education2">2015, M2 (MBA) “Business, European Management, Languages” </span><br>
-                                    University of Orleans, France. </li>
-                                <li class="about__skillbox-list-item lng-education3-location"><span class="lng-education3">2011, Military Interpreter (lieutenant grade)
-                                        </span><br> Moscow State Linguistic University, Military department, Russia.</li>
-                                <li class="about__skillbox-list-item lng-education4-location"><span class="lng-education4">2009, M2 “Diplomacy, International Relations” </span><br> Moscow State
+                                <li class="about__skillbox-list-item one"><span class="special-span lng-education1">2023, FULLSTACK courses. (260hours) Center "Professional"</span>
+                                    Moscow, Russia. </li>
+
+                                <li class="about__skillbox-list-item"><span class="lng-education2">2015, M2 (MBA) "Business, European Management, Languages" </span><br>
+                                    University of Orleans, France.</li>
+
+                                <li class="about__skillbox-list-item"><span class="lng-education3">2011, Military Interpreter (lieutenant grade)
+                                    </span><br>Moscow State Linguistic University, Military department, Russia.</li>
+
+                                <li class="about__skillbox-list-item"><span class="lng-education4">2009, M2 “Diplomacy, International Relations” </span><br> Moscow State
                                     Linguistic University, Russia.</li>
 
-                                <li class="about__skillbox-list-item lng-education5-location"><span class="lng-education4">English Special School</span><br>Moscow, Russia</li>
+                                <li class="about__skillbox-list-item"><span class="lng-education4">English Special School</span><br>Moscow, Russia</li>
                             </ul>
                         </div>
                         <div id="text2" class="about__skillbox-text about__work-experience">
