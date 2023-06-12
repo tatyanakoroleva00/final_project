@@ -1,8 +1,8 @@
 <?php
 $room_name = $_GET['room_name']; //Getting user's request
 $title = 'Rooms - ' . $room_name; //Dynamic title
-require 'views/menu.php';  //Doc with dynamic menu
-require 'views/header-view.php'; //Header
+require 'views/components/menu.php';  //Doc with dynamic menu
+require 'views/components/header.php'; //Header
 require 'models/Rooms.php'; //Requiring Rooms Class doc
 
 $horizontal_images = Rooms::getFreshIdeasRooms(); //Connection with Rooms Class
@@ -14,17 +14,8 @@ $horizontal_images = Rooms::getFreshIdeasRooms(); //Connection with Rooms Class
         <div class="container">
             <div class="product__ideas">
 
-                <?php require 'views/search-bar.php' ?>
+                <?php require 'views/components/search-bar.php' ?>
 
-<!--                <div class="product__ideas--left-col">-->
-<!--                    <div class = "product-ideas__search-panel">-->
-<!---->
-<!--                        <p>Categories</p>-->
-<!---->
-<!---->
-<!---->
-<!--                    </div>-->
-<!--                </div>-->
                 <div class="product-ideas--right-col">
                     <div class="fresh__ideas"><p>GET FRESH IDEAS</p></div>
                     <div class="product-ideas__items">
@@ -44,4 +35,4 @@ $horizontal_images = Rooms::getFreshIdeasRooms(); //Connection with Rooms Class
     </section>
 
 <?php
-require 'views/footer-view.php';
+require 'views/components/footer.php';

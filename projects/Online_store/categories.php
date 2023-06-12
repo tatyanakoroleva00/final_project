@@ -2,8 +2,8 @@
 $category_name = $_GET['category_name']; //Getting user's request
 $title = 'Categories - ' . $category_name; //Dynamic title
 
-require 'views/menu.php';  //Doc with dynamic menu
-require 'views/header-view.php'; //Header
+require 'views/components/menu.php';  //Doc with dynamic menu
+require 'views/components/header.php'; //Header
 require 'models/Categories.php'; //Requiring Categories Class doc
 
 $horizontal_images = Categories::getFreshIdeasCategories(); //Connection with Categories Class
@@ -15,13 +15,7 @@ $horizontal_images = Categories::getFreshIdeasCategories(); //Connection with Ca
         <div class="container">
             <div class="product__ideas">
 
-                <?php require 'views/search-bar.php' ?>
-
-<!--                <div class="product__ideas--left-col">-->
-<!--                    <div class = "product-ideas__search-panel">-->
-<!--                        <p>Categories</p>-->
-<!--                    </div>-->
-<!--                </div>-->
+                <?php require 'views/components/search-bar.php' ?>
 
 
                 <div class="product-ideas--right-col">
@@ -45,4 +39,4 @@ $horizontal_images = Categories::getFreshIdeasCategories(); //Connection with Ca
     </section>
 
 <?php
-require 'views/footer-view.php';
+require 'views/components/footer.php';

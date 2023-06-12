@@ -46,3 +46,11 @@ input {
     color: #434395;
     text-decoration: none;
 }
+.input-error {
+    font-size: 1rem;
+    color: red;
+}
+.msg {
+    color: blue;
+    font-size: 1.3rem;
+}

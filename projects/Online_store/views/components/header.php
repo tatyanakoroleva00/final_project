@@ -1,3 +1,22 @@
+<?php
+session_start();
+
+if (isset($_SESSION['user'])) {
+    $message = $_SESSION['user'];
+}
+
+if(isset($_GET['exit']))
+{
+    session_destroy();
+    header('Location: index.php');
+    exit;
+}
+//<a href="?exit">Exit</a>
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +55,11 @@
                 </div>
                 <div class="top-nav--right">
                     <div><span><img alt="favourites" class="favs pointer" src="icons/favourite.png" height="40px"></span></div>
-                    <div><span><a href="login.php"><img alt="registration-form" class="reg-form pointer" src="icons/user.png" height="40px"></a></span></div>
+                    <?php if (isset($_SESSION['user'])) {?><div>
+                            <span class="hello__message"><?=$message?></span>
+                        </div><?php } else { ?>
+                        <div><span><a href="login.php"><img alt="registration-form" class="reg-form pointer" src="icons/user.png" height="40px"></a></span></div>
+                    <?php }?>
                     <div><span><img alt="shopping-bag" class="cart pointer" src="icons/shopping_bag.png" height="40px"></span></div>
                 </div>
             </div>
@@ -70,7 +93,7 @@
                             </ul>
                         </li>
                         <li><a href="#">About us</a></li>
-                        <li><a href="#">Reviews</a></li>
+                        <li><a href="?exit">Reviews / Exit session</a></li>
                     </ul>
                 </div>
             </div>
