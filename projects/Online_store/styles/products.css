@@ -12,6 +12,7 @@
     gap: 4rem;
     margin-top: 4rem;
 }
+/***************************SEARCH PANEL********************/
 .product__ideas--left-col {
     display: flex;
     flex-direction: column;
@@ -22,6 +23,22 @@
     background-color: rgba(211, 211, 211, 0.22);
     height: 100rem;
 }
+.newclass {
+    color: red;
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/************RIGHT COL*********************/
 .product-ideas--right-col {
     display: flex;
     flex-direction: column;

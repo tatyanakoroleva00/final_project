@@ -87,22 +87,19 @@ body {
 /*****************************************************CREATIVITY*************************/
 
 .creativity {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     background-color: antiquewhite;
 }
-
 .about-me-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 5rem;
 }
-
 .right-col-lg, .left-col-lg {
     /*background-color: #dedede;*/
     background-color: antiquewhite;
-    height: 70rem;
+    height: 50rem;
     width: 80rem;
     padding: 2rem;
     background-color: rgba(255, 255, 255, 0.34);
@@ -118,22 +115,32 @@ body {
     justify-content: space-between;
     margin-bottom: 5rem;
 }
+
+.books-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: antiquewhite;
+    height: 30rem;
+    width: 80rem;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.34);
+    margin-bottom: 5rem;
+}
+audio {
+    margin-left: 4rem;
+    width: 50rem;
+    background-color: white;
+    padding: 1rem;
+}
 .box {
-    /*background-color: lightgray;*/
-    width: 54rem;
-    height: 40rem;
-    /*background-color: antiquewhite;*/
-    /*display: flex;*/
-    flex-direction: row;
+    width: 23rem;
+    height: 30rem;
+    background-color: white;
+    display: flex;
     justify-content: center;
     align-items: center;
-    /*background-color: gray;*/
-
-
-}
-
-.left-col-lg {
-    position: relative;
 }
 .image {
     padding: 2rem 2rem 4rem 2rem;
@@ -141,4 +148,25 @@ body {
     position: absolute;
     top: 10rem;
     left: 10rem;
+}
+.box {
+    /*background: rgba(250, 235, 215, 0.7);*/
+    background-color: white;
+}
+.header__navbar-link:hover {
+    text-decoration: underline;
+}
+.book {
+    width: 20rem;
+    height: 27rem;
+    object-fit: fill;
+}
+footer {
+    padding-top: 2rem;
+}
+footer p {
+    font-size: 1.5rem;
+}
+.logo:hover {
+    text-decoration: none;
 }
