@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Июн 11 2023 г., 00:30
+-- Время создания: Июн 13 2023 г., 01:29
 -- Версия сервера: 10.4.28-MariaDB
 -- Версия PHP: 8.2.4
 
@@ -116,38 +116,31 @@ CREATE TABLE `messages` (
   `id` int(11) NOT NULL,
   `name` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
-  `message` text DEFAULT NULL
+  `message` text DEFAULT NULL,
+  `add_date` date NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Дамп данных таблицы `messages`
 --
 
-INSERT INTO `messages` (`id`, `name`, `email`, `message`) VALUES
-(19, 'ыфваыва', 'asdkjdsfkjd@mail.ru', 'asdlfsdfjkajsdfsdf'),
-(20, 'ыфваыва', 'asdkjdsfkjd@mail.ru', 'asdlfsdfjkajsdfsdf'),
-(21, 'ыфваыва', 'asdkjdsfkjd@mail.ru', 'asdlfsdfjkajsdfsdf'),
-(22, 'ыфваыва', 'asdkjdsfkjd@mail.ru', 'asdlfsdfjkajsdfsdf'),
-(23, 'ыфваыва', 'asdkjdsfkjd@mail.ru', 'asdlfsdfjkajsdfsdf'),
-(24, 'asdfadsf', 'adfafsdafsd@mail.ru', 'fkajdf;ajsf;ksadj;f'),
-(25, 'Tatiana', 'tatyanakoroleva@mail.ru', 'Hello :)'),
-(26, 'dfgfdg', 'fdgfdgfdg@mail.ru', 'falsjdf\'asjdfklsddsfasdf'),
-(27, 'Tatiana', 'tatyanakoroleva@mail.ru', 'Hello :)'),
-(28, 'asdfasdf', 'asdfasdfdsf@mail.ru', 'sadfsdfsdfdf'),
-(29, 'asdfsdaf', 'asdfadf@mail.ru', 'adfasdfsdafdsf'),
-(30, 'dfgfdg', 'fdgfdgfdg@mail.ru', 'falsjdf\'asjdfklsddsfasdf'),
-(31, 'фывафыва', 'kadjfkdjf@amail.ru', 'akfjakdfj;akdsfsdfsdafds'),
-(32, 'фывафыва', 'kadjfkdjf@amail.ru', 'akfjakdfj;akdsfsdfsdafds'),
-(33, 'asdfasdf', 'asdfasdfdsf@mail.ru', 'sadfsdfsdfdf'),
-(34, 'asdfasdf', 'asdfasdfdsf@mail.ru', 'sadfsdfsdfdf'),
-(35, 'asdfasdf', 'sdafasdf@mail.ru', 'dsfsdfsdf'),
-(36, 'adfasd', 'fasdfasdf@maidfljaf', 'adfadfads'),
-(37, 'adfasd', 'fasdfasdf@maidfljaf', 'adfadfads'),
-(38, 'dfsdf', 'dsfadff@mail.rusajdf', 'asdfadsfsdf'),
-(39, 'Mike', 'Jordan@mail.ru', 'Hello, how are you these days ? \r\n'),
-(40, 'Hello', 'Hello@mail.ru', 'What is up ?'),
-(41, 'hello', 'helo@mail.ru', 'aheloadfj'),
-(42, 'asdfsdf', 'sdfsdf@mail.ru', 'asdfsdfsdfsdf');
+INSERT INTO `messages` (`id`, `name`, `email`, `message`, `add_date`) VALUES
+(19, 'ыфваыва', 'asdkjdsfkjd@mail.ru', 'asdlfsdfjkajsdfsdf', '2023-06-12'),
+(20, 'ыфваыва', 'asdkjdsfkjd@mail.ru', 'asdlfsdfjkajsdfsdf', '2023-06-12'),
+(21, 'ыфваыва', 'asdkjdsfkjd@mail.ru', 'asdlfsdfjkajsdfsdf', '2023-06-12'),
+(22, 'ыфваыва', 'asdkjdsfkjd@mail.ru', 'asdlfsdfjkajsdfsdf', '2023-06-12'),
+(23, 'ыфваыва', 'asdkjdsfkjd@mail.ru', 'asdlfsdfjkajsdfsdf', '2023-06-12'),
+(24, 'asdfadsf', 'adfafsdafsd@mail.ru', 'fkajdf;ajsf;ksadj;f', '2023-06-12'),
+(25, 'Tatiana', 'tatyanakoroleva@mail.ru', 'Hello :)', '2023-06-12'),
+(26, 'dfgfdg', 'fdgfdgfdg@mail.ru', 'falsjdf\'asjdfklsddsfasdf', '2023-06-12'),
+(27, 'Tatiana', 'tatyanakoroleva@mail.ru', 'Hello :)', '2023-06-12'),
+(28, 'asdfasdf', 'asdfasdfdsf@mail.ru', 'sadfsdfsdfdf', '2023-06-12'),
+(39, 'Mike', 'Jordan@mail.ru', 'Hello, how are you these days ? \r\n', '2023-06-12'),
+(40, 'Hello', 'Hello@mail.ru', 'What is up ?', '2023-06-12'),
+(41, 'hello', 'helo@mail.ru', 'aheloadfj', '2023-06-12'),
+(42, 'asdfsdf', 'sdfsdf@mail.ru', 'asdfsdfsdfsdf', '2023-06-12'),
+(43, 'asdfdsfsdf', 'alex@mail.ru', 'Hello, how are you doing? i am happy to find your website !', '2023-06-12'),
+(44, 'Mike', 'mike@mail.ru', 'Hi, I like your website', '2023-06-12');
 
 -- --------------------------------------------------------
 
@@ -232,19 +225,28 @@ INSERT INTO `rooms` (`id`, `name`, `short_descr`, `full_descr`, `image`, `type`)
 
 CREATE TABLE `users` (
   `ID` int(11) NOT NULL,
-  `first_name` varchar(255) NOT NULL,
-  `last_name` varchar(255) NOT NULL,
-  `login` varchar(255) NOT NULL,
-  `password` varchar(30) NOT NULL,
-  `image` text NOT NULL
+  `first_name` varchar(255) DEFAULT NULL,
+  `last_name` varchar(255) DEFAULT NULL,
+  `login` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `password` varchar(500) DEFAULT NULL,
+  `image` varchar(500) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Дамп данных таблицы `users`
 --
 
-INSERT INTO `users` (`ID`, `first_name`, `last_name`, `login`, `password`, `image`) VALUES
-(1, 'Marina', 'Anderson', 'marinaK123', '123456', '');
+INSERT INTO `users` (`ID`, `first_name`, `last_name`, `login`, `email`, `password`, `image`) VALUES
+(2, 'tatyana', 'Tatiana', 'Koroleva', 'tatyanakoroleva00@mail.ru', '$2y$10$lpQPlcLldBx8pXBGQJtXP.Q.cX5iAtF5DzjEZqKNtG8hD/LOhzXTu', NULL),
+(7, 'dsfsdfsdf', 'sdfsdf', 'sdfdsfsdf', 'sdafdsf@nmauk.ru', '$2y$10$/yo9OsHGdbW3CYciUvTeIeNAx1N60wKyLVtSRzVDAmchPUPFJivaW', NULL),
+(8, 'sdfsdf', 'sdaf', 'sdaf', 'sdfsdf@mail.ru', '$2y$10$HePuOLJZCZgxK9G0Zq803eZfEt16jaD3vXaoaTl6oXYsoRd3aA.4K', NULL),
+(9, 'sdafsdfdsdf', 'asdfsdf', 'sadfsdf', 'dasfdsfdf@mail.ru', '$2y$10$Mb2N5j1oDwqB83ruFxzUpO9YhDeYEskH.ZYNwQDPvnN.qOBsxtbR2', NULL),
+(10, 'tatiana', 'Tatiana', 'Koroleva', 'tatyanakoroleva00@gmail.ru', '$2y$10$eR28m31.f0NbjZhSCRKaL.ULEuBCXl3IvJX.8MlSya7b4lCNKThjC', NULL),
+(11, 'koroleva1', 'tatiana', 'koroleva', 'tatyanakoroleva0000@mail.ru', '$2y$10$kbCoenQ8NQDwN09ga6UWbeSFriF225FNPeOj2Ni3JHMlA5rNohvdW', NULL),
+(12, 'katya123', 'katya', 'koroleva', 'koroleva@mail.ru', '123456', NULL),
+(13, 'hello', 'tatyana', 'koroleva', 'hello@mail.ru', '$2y$10$JWjHK5umFi4RBvcwY0lbXuHv6zi7SQD4.U8PR1dhsnrHRb79bUY5G', NULL),
+(14, 'mike', 'Mike', 'Brew', 'mike123@mail.ru', '123456', NULL);
 
 --
 -- Индексы сохранённых таблиц
@@ -300,7 +302,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT для таблицы `messages`
 --
 ALTER TABLE `messages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT для таблицы `rooms`
@@ -312,7 +314,7 @@ ALTER TABLE `rooms`
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
