@@ -76,7 +76,6 @@ $posts = Posts::getLimitedNumberOfPosts();
                     </div>
                     <div class="home-page__content--right-col">
                         <img class="home-page__image" src="img/me.jpg" alt="profile picture">
-                        <!-- <img src="img/me.png" alt="profile picture"> -->
                     </div>
                 </section>
                 <aside class="home-page__right-decor">
@@ -212,7 +211,8 @@ $posts = Posts::getLimitedNumberOfPosts();
                 <div class="portfolio__gallery portfolio__gallery--templates" id="templates-gallery">
                     
                     <div class="portfolio__gallery-item proj1">
-                        <div class="portfolio__item project-col1"><a href="projects/Templates_practice/01.Template_Mogo/index.html" target="_blank">
+                        <div class="portfolio__item project-col1">
+                            <a href="projects/Templates_practice/01.Template_Mogo/index.html" target="_blank">
                             <div class="portfolio__img-box"><img class="portfolio__img first-img" src="img/tiny_pics_portfolios/mogo1.jpg" alt="project1"></div>
                             
                             <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/mogo2.jpg" alt="project1"></div>
@@ -239,7 +239,7 @@ $posts = Posts::getLimitedNumberOfPosts();
                         </div>
                             
                         <div class="portfolio__item-descr">
-                        <a class="portfolio__item-descr-link" href="https://github.com/tatyanakoroleva00/final_project/tree/main/projects/Templates_practice/01.Template_Mogo" target="_blank"><h5 class="portfolio__item-title">#4."Welcome To Mogo" (2023)</h5></a><br>
+                            <a class="portfolio__item-descr-link" href="https://github.com/tatyanakoroleva00/final_project/tree/main/projects/Templates_practice/01.Template_Mogo" target="_blank"><h5 class="portfolio__item-title">#4."Welcome To Mogo" (2023)</h5></a><br>
                             <p>This multi-pages project, I consider to be the one which shows the growth in coding skills.
                                 It gave me the vast knowledge in HTML / CSS layout, and also gave me the vision of real websites.
                                 I used absolute and relative positions to place items one on another, opacity and filters. There were repetitive sections, flex-boxes,

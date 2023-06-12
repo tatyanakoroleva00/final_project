@@ -19,6 +19,6 @@ VALUES (?, ?, ?);";
 
 
 
-//$user_message = "From: $name, Mail: $email, Message: $message";
-//
-//mail('tatianakoroleva_work@mail.ru','Message from users', $user_message);
+$user_message = "From: $name, Mail: $email, Message: $message";
+
+mail('tatianakoroleva_work@mail.ru','Message from users', $user_message);

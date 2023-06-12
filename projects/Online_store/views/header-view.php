@@ -54,7 +54,7 @@
                             <ul class="dropdown-content dropdown-content--categories">
                                 <li><a class="dropdown-content-link" href="categories.php?category_name=<?= 'furniture'?>"><img class="furniture" src="icons/furniture.png" alt="furniture"> Furniture</a></li>
                                 <li><a class="dropdown-content-link" href="categories.php?category_name=<?= 'textiles'?>"><img class="textile" src="icons/textile.png" alt="textiles">Textiles</a></li>
-                                <li><a class="dropdown-content-link" href="categories.php?category_name=<?= 'decorations'?>"><img class="decor" src="icons/decor.png" alt="decorations">Decorations</a></li>
+                                <li><a class="dropdown-content-link" href="categories.php?category_name=<?= 'decorations'?>"><img class="decor" src="icons/decor2.png" alt="decorations">Decorations</a></li>
                                 <li><a class="dropdown-content-link" href="categories.php?category_name=<?= 'lighting'?>"><img class="lighting" src="icons/lighting.png" alt="lighting">Lighting</a></li>
                                 <li><a class="dropdown-content-link" href="categories.php?category_name=<?= 'cozy items'?>"><img class="cozy" src="icons/cozy.png" alt="cozy items">Cozy Items</a></li>
                             </ul>
