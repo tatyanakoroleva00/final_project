@@ -31,6 +31,7 @@ if(isset($_GET['exit']))
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <script defer src="script.js"></script>
+    <script>!function(e,t,a){var c=e.head||e.getElementsByTagName("head")[0],n=e.createElement("script");n.async=!0,n.defer=!0, n.type="text/javascript",n.src=t+"/static/js/widget.js?config="+JSON.stringify(a),c.appendChild(n)}(document,"https://app.engati.com",{bot_key:"603df0e0c9164b38",welcome_msg:true,branding_key:"default",server:"https://app.engati.com",e:"p" });</script>
 </head>
 <body>
 <header class="header">

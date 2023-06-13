@@ -10,7 +10,7 @@
                 </div>
                 <div class="right">
                     <img src="images/decorations/3.jpg" alt="sales-idea" class="object-fit">
-                    <div class="on-img-text-2"><a href="sales.php">SALES 15% OFF</a></div>
+                    <div class="on-img-text-2"><a href="#">SALES 15% OFF</a></div>
                 </div>
             </div>
         </section>

@@ -66,7 +66,7 @@ $posts = Posts::getLimitedNumberOfPosts();
                                 ME</button>
 
                             <button class="download-cv-btn home-page__download-cv-btn">
-                                <a class="download-cv-btn__link lng-download-cv-btn" href="CV/CV_Koroleva_ТА.pdf" download>DOWNLOAD CV</a>
+                                <a class="download-cv-btn__link lng-download-cv-btn" href="CV/CV.pdf" download>DOWNLOAD CV</a>
                                 <img class="download-cv-btn__icon" src="img/icons/download.png" alt="download cv">
                             </button>
                         </div>
