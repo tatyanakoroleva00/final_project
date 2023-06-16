@@ -109,36 +109,33 @@ $posts = Posts::getLimitedNumberOfPosts();
                         <div id="text1" class="about__skillbox-text about__education">
                             <ul class="about__skillbox-list">
                                 <li class="about__skillbox-list-item one"><span class="special-span lng-education1">2023, FULLSTACK courses. (260hours) Center "Professional"</span>
-                                    Moscow, Russia. </li>
+                                    <span class="lng-education-location">Moscow, Russia.</span></li>
 
-                                <li class="about__skillbox-list-item"><span class="lng-education2">2015, M2 (MBA) "Business, European Management, Languages" </span><br>
+                                <li class="about__skillbox-list-item"><span class="key-words lng-education2">2015, M2 (MBA) "Business, European Management, Languages" </span><br>
                                     University of Orleans, France.</li>
 
-                                <li class="about__skillbox-list-item"><span class="lng-education3">2011, Military Interpreter (lieutenant grade)
-                                    </span><br>Moscow State Linguistic University, Military department, Russia.</li>
-
-                                <li class="about__skillbox-list-item"><span class="lng-education4">2009, M2 “Diplomacy, International Relations” </span><br> Moscow State
+                               <li class="about__skillbox-list-item"><span class="key-words lng-education4">2009, M2 “Diplomacy, International Relations” </span><br> Moscow State
                                     Linguistic University, Russia.</li>
 
-                                <li class="about__skillbox-list-item"><span class="lng-education4">English Special School</span><br>Moscow, Russia</li>
+                                <li class="about__skillbox-list-item"><span class="key-words lng-education4">English Special School</span><br>Moscow, Russia</li>
                             </ul>
                         </div>
                         <div id="text2" class="about__skillbox-text about__work-experience">
                             <ul class="about__skillbox-list">
-                                <li class="about__skillbox-list-item"><span class="special-span">*Currently searching for work experience in the IT domain.<span class="special-span"></span> </li>
-                                <li class="about__skillbox-list-item"><span>2018 – 2020, SENIOR TRAVEL MANAGER in ("TSAR VOYAGES", Moscow, RU). </span>Creating travel tourist routes and programs. Interaction with clients from anglophone and francophone countries. Interation with service providers (hotels, guides, transport companies, museums...).</li>
-                                <li class="about__skillbox-list-item"><span>2017 – 2018, CARGO TRANSPORTATION MANAGER ("KUEHNE + NAGEL", Paris, FR).</span>  Ordering
+                                <li class="about__skillbox-list-item"><span class="key-words special-span">*Currently searching for work experience in the IT domain.</span> </li>
+                                <li class="about__skillbox-list-item"><span class="key-words">2018 – 2020, SENIOR TRAVEL MANAGER in ("TSAR VOYAGES", Moscow, RU). </span>Creating travel tourist routes and programs. Interaction with clients from anglophone and francophone countries. Interation with service providers (hotels, guides, transport companies, museums...).</li>
+                                <li class="about__skillbox-list-item"><span class="key-words">2017 – 2018, CARGO TRANSPORTATION MANAGER ("KUEHNE + NAGEL", Paris, FR).</span>  Ordering
                                     transport for good delivery in
                                     Europe. Interaction with European clients and service providers. </li>
                             </ul>
                         </div>
                         <div id="text3" class="about__skillbox-text about__languages">
                             <ul class="about__skillbox-list">
-                                <li class="about__skillbox-list-item"><span>Russian</span> - native, C2</li>
-                                <li class="about__skillbox-list-item"><span>English, French</span> - advanced, C1/C2;</li>
-                                <li class="about__skillbox-list-item"><span>Spanish, Italian, German</span> – intermediate, B1;</li>
-                                <li class="about__skillbox-list-item"><span>Chinese</span> - A1</li>
-                                <li class="about__skillbox-list-item"><span>Latin</span></li>
+                                <li class="about__skillbox-list-item"><span class="key-words">Russian</span> - native, C2</li>
+                                <li class="about__skillbox-list-item"><span class="key-words">English, French</span> - advanced, C1/C2;</li>
+                                <li class="about__skillbox-list-item"><span class="key-words">Spanish, Italian, German</span> – intermediate, B1;</li>
+                                <li class="about__skillbox-list-item"><span class="key-words">Chinese</span> - A1</li>
+                                <li class="about__skillbox-list-item"><span class="key-words">Latin</span></li>
                             </ul>
                         </div>
                         <div id="text4" class="about__skillbox-text about__computer-skills">
@@ -157,14 +154,14 @@ $posts = Posts::getLimitedNumberOfPosts();
                         </div>
                         <div id="text5" class="about__skillbox-text about__soft-skills ">
                             <ul class="about__skillbox-list">
-                                <li class="about__skillbox-list-item"><span>Responsible, attentive</span></li>
-                                <li class="about__skillbox-list-item">Able to work <span>independently</span>  and in a <span>group</span> </li>
-                                <li class="about__skillbox-list-item">Both <span>analytical</span> and
-                                <span>creative</span> mindsets</li>
-                                <li class="about__skillbox-list-item">In constant <span>self-development</span></li>
-                                <li class="about__skillbox-list-item"><span>Leadership and
+                                <li class="about__skillbox-list-item"><span class="key-words">Responsible, attentive</span></li>
+                                <li class="about__skillbox-list-item">Able to work <span class="key-words">independently</span>  and in a <span class="key-words">group</span> </li>
+                                <li class="about__skillbox-list-item">Both <span class="key-words">analytical</span> and
+                                <span class="key-words">creative</span> mindsets</li>
+                                <li class="about__skillbox-list-item">In constant <span class="key-words">self-development</span></li>
+                                <li class="about__skillbox-list-item"><span class="key-words">Leadership and
                                 organizational skills</span></li>
-                                <li class="about__skillbox-list-item">Capability of <span>analyzing</span> and <span>solving</span> complex problems</li>
+                                <li class="about__skillbox-list-item">Capability of <span class="key-words">analyzing</span> and <span class="key-words">solving</span> complex problems</li>
                             </ul>
                         </div>
                         <div id="text6" class="about__skillbox-text about__certificates">

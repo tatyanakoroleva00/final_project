@@ -38,8 +38,8 @@
 <!--        <label class="password">Password Confirmation</label>-->
 <!--        <input type="password" name="password_confirm" placeholder="Confirm a password"/>-->
 
-<!--        <p><input type="checkbox" name="terms" value="1"> <a href="#">I accept all terms & conditions</a>-->
-<!--        <input type="hidden" value="0"> </p>-->
+        <p><input type="checkbox" name="terms" value="1"> <a href="#">I accept all terms & conditions</a>
+        <input type="hidden" value="0"> </p>
 
         <input class="button" type="submit" value="Register Now">
 

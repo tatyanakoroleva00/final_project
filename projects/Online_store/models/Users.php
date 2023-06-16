@@ -39,7 +39,7 @@ class Users
 							VALUES(?, ?, ?, ?, ?)";
 
         $result = $pdo->prepare($query);
-        $result->execute([$user['login'], $user['first_name'], $user['last_name'],
+        $result->execute([$user['first_name'], $user['last_name'], $user['login'],
             $user['email'], $user['password']]);
 
         return $pdo->lastInsertId();

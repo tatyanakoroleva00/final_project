@@ -93,6 +93,17 @@ const langArr = {
         "en" : "Certificates",
         "fr" : "Certificats",
     },
+    "education1" : {
+        "ru" : "2023, Фулстек-разработка. (260ч). \"Центр Профессионал\"",
+        "en" : "2023, FULLSTACK courses. (260h) Center \"Professional\"",
+        "fr" : "2023, cours FULLSTACK. (260h) Centre \"Professionnel\"",
+    },
+    "education-location" : {
+        "ru" : "Москва, Россия",
+        "en" : "Moscow, Russia",
+        "fr" : "Moscou, la Russie",
+    }
+
 
 };
 

@@ -430,6 +430,7 @@ body {
   font-size: 2rem;
   overflow: auto;
   padding-right: 2rem;
+  color: white;
 }
 
 .about__skillbox p, .about__skillbox-list-item {
@@ -442,15 +443,12 @@ body {
   list-style-type: square;
   list-style-position: inside;
 }
-
-.about__skillbox-descr span {
+.key-words {
   font-weight: bold;
   color: rgb(81, 118, 254);
   opacity: 1;
 }
-.about__education .special-span,
-.about__work-experience .special-span, 
-.about__certificates .special-span {
+.special-span {
   color: #00ffff;
   font-weight: bold;
 }
