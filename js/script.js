@@ -1,120 +1,66 @@
 /*This is a function which links each button with a specific text. Clicking on one button, other buttons will lose their shadows and the only pressed button will have its shadow. */
 
-    const buttons = document.querySelectorAll('.about__skillbox-btn');
-    const btn1 = document.querySelector('#btn1');
-    const btn2 = document.querySelector('#btn2');
-    const btn3 = document.querySelector('#btn3');
-    const btn4 = document.querySelector('#btn4');
-    const btn5 = document.querySelector('#btn5');
-    const btn6 = document.querySelector('#btn6');
-
+                                    /*SWITCH TEXTS WITH BTNS*/
+function switchTextsWithBtns() {
+    const btns = document.querySelector('.about__skillbox-btns');
+    const btn = document.querySelectorAll('.about__skillbox-btn');
     const text = document.querySelectorAll('.about__skillbox-text');
-    const text1 = document.querySelector('#text1');
-    const text2 = document.querySelector('#text2');
-    const text3 = document.querySelector('#text3');
-    const text4 = document.querySelector('#text4');
-    const text5 = document.querySelector('#text5');
-    const text6 = document.querySelector('#text6');
 
+    btns.addEventListener('click', (event) => {
+        if (event.target && event.target.classList.contains('about__skillbox-btn')) {
+            if (!event.target.classList.contains('box-shadow')) {
+                event.target.classList.add('box-shadow');
+
+                btn.forEach((item, i) => { /*removing all styles*/
+                    item.style.boxShadow = 'none';
+                    item.classList.remove('box-shadow');
+                    if (event.target == item) { /*linking a text with a button*/
+                        text.forEach(item => {
+                            item.style.display = 'none';
+                        })
+                        text[i].style.display = 'inline';
+                    }
+                })
+                event.target.style.boxShadow= '1px 1px 15px #00ffff'; /*shadow */
+            }
+        }
+    })
+}
+switchTextsWithBtns()
+
+
+
+
+
+/* LIGHT AND LAMP*/
+function turnOnTheLight() {
     const lamp = document.querySelector('.lamp');
     const light = document.querySelector('.light');
     const lampMessage = document.querySelector('.lamp-message');
 
+    lamp.addEventListener("click", (e) => {
+        e.preventDefault();
+        light.classList.remove('animation');
+        void light.offsetWidth;
+        light.classList.add('animation');
 
+    }, false);
+}
+turnOnTheLight();
 
-    function turnOnTheLight() {
-        lamp.addEventListener("click", (e) => {
-            e.preventDefault();
-            light.classList.remove('animation');
-            void light.offsetWidth;
-            light.classList.add('animation');
+/*SMOOTH MOVEMENT*/
 
-        }, false);
-
-    }
-    turnOnTheLight();
-
-
-    const anchors = document.querySelectorAll('a[href*="#"]'); /*Работает в Google Chrome*/
-    for (let anchor of anchors) {
-        anchor.addEventListener("click", function(event) {
-            event.preventDefault();
-            const blockID = anchor.getAttribute('href');
-            document.querySelector('' + blockID).scrollIntoView({
-                behavior: "smooth", block: "start"
-            })
-            anchor.style.cursor = 'pointer';
+const anchors = document.querySelectorAll('a[href*="#"]'); /*Работает в Google Chrome*/
+for (let anchor of anchors) {
+    anchor.addEventListener("click", function(event) {
+        event.preventDefault();
+        const blockID = anchor.getAttribute('href');
+        document.querySelector('' + blockID).scrollIntoView({
+            behavior: "smooth", block: "start"
         })
-    }
-
-
-    btn1.addEventListener('click', ()=> {
-        text.forEach(textEl => {
-            textEl.style.display = 'none';
-        })
-        buttons.forEach(btnEl => {
-            btnEl.style.boxShadow = 'none';
-        })
-        text1.style.display = 'inline';
-        btn1.style.boxShadow = '1px 1px 15px #00ffff'; 
-    });
-
-    btn2.addEventListener('click', ()=> {
-        text.forEach(textEl => {
-            textEl.style.display = 'none';
-        })
-        buttons.forEach(btnEl => {
-            btnEl.style.boxShadow = 'none';
-        })
-        text2.style.display = 'inline';
-        btn2.style.boxShadow = '1px 1px 15px #00ffff'; 
-    });
-
-    btn3.addEventListener('click', ()=> {
-        text.forEach(textEl => {
-            textEl.style.display = 'none';
-        })
-        buttons.forEach(btnEl => {
-            btnEl.style.boxShadow = 'none';
-        })
-        text3.style.display = 'inline';
-        btn3.style.boxShadow = '1px 1px 15px #00ffff'; 
-    });
-
-    btn4.addEventListener('click', ()=> {
-        text.forEach(textEl => {
-            textEl.style.display = 'none';
-        })
-        buttons.forEach(btnEl => {
-            btnEl.style.boxShadow = 'none';
-        })
-        text4.style.display = 'inline';
-        btn4.style.boxShadow = '1px 1px 15px #00ffff'; 
-    });
-        
-    btn5.addEventListener('click', ()=> {
-        text.forEach(textEl => {
-            textEl.style.display = 'none';
-        })
-        buttons.forEach(btnEl => {
-            btnEl.style.boxShadow = 'none';
-        })
-        text5.style.display = 'inline';
-        btn5.style.boxShadow = '1px 1px 15px #00ffff'; 
-    });
-   
-    btn6.addEventListener('click', ()=> {
-        text.forEach(textEl => {
-            textEl.style.display = 'none';
-        })
-        buttons.forEach(btnEl => {
-            btnEl.style.boxShadow = 'none';
-        })
-        text6.style.display = 'inline';
-        btn6.style.boxShadow = '1px 1px 15px #00ffff'; 
-    });
-        
-    
+        anchor.style.cursor = 'pointer';
+    })
+}
 
 
 /*This function will make the portfolio works appear or disappear*/

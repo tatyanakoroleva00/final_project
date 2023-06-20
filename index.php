@@ -98,7 +98,7 @@ $posts = Posts::getLimitedNumberOfPosts();
             <section class="about__content">
                 <div class="about__skillbox">
                     <div class="about__skillbox-btns">
-                        <button id="btn1" class="about__skillbox-btn lng-education "><span>Education</span></button>
+                        <button id="btn1" class="about__skillbox-btn lng-education"><span>Education</span></button>
                         <button id="btn2" class="about__skillbox-btn lng-work-experience"><span>Work Experience</span></button>
                         <button id="btn3" class="about__skillbox-btn lng-languages"><span>Languages</span></button>
                         <button id="btn4" class="about__skillbox-btn lng-computer-skills"><span>Computer Skills</span></button>
@@ -108,25 +108,26 @@ $posts = Posts::getLimitedNumberOfPosts();
                     <div class="about__skillbox-descr">
                         <div id="text1" class="about__skillbox-text about__education">
                             <ul class="about__skillbox-list">
-                                <li class="about__skillbox-list-item one"><span class="special-span lng-education1">2023, FULLSTACK courses. (260hours) Center "Professional"</span>
+                                <li class="about__skillbox-list-item one"><span class="special-span lng-education1">2023, FULLSTACK courses. (260h) Center "Professional"</span>
                                     <span class="lng-education-location">Moscow, Russia.</span></li>
 
                                 <li class="about__skillbox-list-item"><span class="key-words lng-education2">2015, M2 (MBA) "Business, European Management, Languages" </span><br>
-                                    University of Orleans, France.</li>
+                                    <span class="lng-education-location2">University of Orleans, France.</span></li>
 
-                               <li class="about__skillbox-list-item"><span class="key-words lng-education4">2009, M2 “Diplomacy, International Relations” </span><br> Moscow State
-                                    Linguistic University, Russia.</li>
+                               <li class="about__skillbox-list-item"><span class="key-words lng-education3">2009, M2 “Diplomacy, International Relations” </span><br><span class="lng-education-location3"> Moscow State
+                                       Linguistic University, Russia.</span></li>
 
-                                <li class="about__skillbox-list-item"><span class="key-words lng-education4">English Special School</span><br>Moscow, Russia</li>
+                                <li class="about__skillbox-list-item"><span class="key-words lng-education4">English Special School</span><br><span class="lng-education-location4">Moscow, Russia</span></li>
                             </ul>
                         </div>
                         <div id="text2" class="about__skillbox-text about__work-experience">
                             <ul class="about__skillbox-list">
-                                <li class="about__skillbox-list-item"><span class="key-words special-span">*Currently searching for work experience in the IT domain.</span> </li>
-                                <li class="about__skillbox-list-item"><span class="key-words">2018 – 2020, SENIOR TRAVEL MANAGER in ("TSAR VOYAGES", Moscow, RU). </span>Creating travel tourist routes and programs. Interaction with clients from anglophone and francophone countries. Interation with service providers (hotels, guides, transport companies, museums...).</li>
-                                <li class="about__skillbox-list-item"><span class="key-words">2017 – 2018, CARGO TRANSPORTATION MANAGER ("KUEHNE + NAGEL", Paris, FR).</span>  Ordering
+                                <li class="about__skillbox-list-item"><span class="key-words special-span lng-work-experience1">*Currently searching for work experience in the IT domain.</span> </li>
+                                <li class="about__skillbox-list-item"><span class="key-words lng-work-experience2">2018 – 2020, SENIOR TRAVEL MANAGER in ("TSAR VOYAGES", Moscow, RU). </span><span class="lng-work-exp-descr1">Creating travel tourist routes and programs.
+                                        Interaction with clients from anglophone and francophone countries. Interation with service providers (hotels, guides, transport companies, museums...).</span></li>
+                                <li class="about__skillbox-list-item"><span class="key-words lng-work-experience3">2017 – 2018, CARGO TRANSPORTATION MANAGER ("KUEHNE + NAGEL", Paris, FR).</span> <span class="lng-work-exp-descr2"> Ordering
                                     transport for good delivery in
-                                    Europe. Interaction with European clients and service providers. </li>
+                                        Europe. Interaction with European clients and service providers.</span> </li>
                             </ul>
                         </div>
                         <div id="text3" class="about__skillbox-text about__languages">

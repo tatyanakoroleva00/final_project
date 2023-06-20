@@ -46,7 +46,7 @@ const langArr = {
     "home-page__text" : {
         "ru" : 'На данный момент я нахожусь в поиске работы на позицию "Младший Фулстек Разработчик"',
         "en" : "Currently, I am looking for the employment opportunities in the IT field as a Junior Fullstack Developer",
-        "fr" : "Actuellement, je suis à la recherche d'opportunités d'emploi dans le domaine informatique en tant que développeur Junior Full Stack",
+        "fr" : "Actuellement, je suis à la recherche d'opportunités d'emploi dans le domaine informatique en tant que développeur Junior Fullstack",
     },
     "hire-btn" : {
         "ru" : "СОБЕСЕДОВАНИЕ",
@@ -94,15 +94,76 @@ const langArr = {
         "fr" : "Certificats",
     },
     "education1" : {
-        "ru" : "2023, Фулстек-разработка. (260ч). \"Центр Профессионал\"",
-        "en" : "2023, FULLSTACK courses. (260h) Center \"Professional\"",
-        "fr" : "2023, cours FULLSTACK. (260h) Centre \"Professionnel\"",
+        "ru" : "2023, Фулстек-разработка. Профессиональная переподготовка. (260ч). \"Центр Профессионал\".",
+        "en" : "2023, FULLSTACK courses. (260h) Center \"Professional\".",
+        "fr" : "2023, cours FULLSTACK. (260h) Centre \"Professionnel\".",
     },
     "education-location" : {
         "ru" : "Москва, Россия",
         "en" : "Moscow, Russia",
         "fr" : "Moscou, la Russie",
-    }
+    },
+    "education2" : {
+        "ru" : "2015, Второе высшее. (MBA) \"Бизнес, Европейский Менеджмент, Языки\".",
+        "en" : "2015, M2 (MBA) \"Business, European Management, Languages\".",
+        "fr" : "2015, M2 (MBA) \"Langues, Affaires, Management Européen\".",
+    },
+    "education-location2" : {
+        "ru" : "Университет г.Орлеан, Франция.",
+        "en" : "University of Orleans, France.",
+        "fr" : "Université d'Orléans, France.",
+    },
+    "education3" : {
+        "ru": "2009, Первое высшее. \"Международные отношения.\"",
+        "en": "2009, M2 “Diplomacy, International Relations”.",
+        "fr": "2009, M2 “Relations Internationales”.",
+    },
+    "education-location3" : {
+        "ru" : "МГЛУ им.Мориса Тореза, Россия",
+        "en" : "Moscow State Linguistic University, Russia.",
+        "fr" : "L'Université d'Etat de Moscou, la Russie",
+    },
+    "education4" : {
+        "ru": "Английская спецшкола",
+        "en": "English Special School",
+        "fr": "L'école anglaise spécialisée",
+    },
+    "education-location4" : {
+        "ru" : "Москва, Россия",
+        "en" : "Moscow, Russia",
+        "fr" : "Moscou, la Russie",
+    },
+    "work-experience1" : {
+        "ru" : "*На данный момент я нахожусь в поиске работы на позицию \"Младший Фулстек Разработчик\"",
+        "en" : "*Currently, I am looking for the employment opportunities in the IT field as a Junior Fullstack Developer",
+        "fr" : "*Actuellement, je suis à la recherche d'opportunités d'emploi dans le domaine informatique en tant que développeur Junior Fullstack",
+    },
+    "work-experience2" : {
+        "ru" : "2018 – 2020, СТАРШИЙ МЕНЕДЖЕР ПО ТУРИЗМУ в (\"ЦАРЬ ВУАЯЖ\", Москва, Россия).",
+        "en" : "2018 – 2020, SENIOR TRAVEL MANAGER in (\"TSAR VOYAGES\", Moscow, RU).",
+        "fr" : "2018 – 2020, GESTIONNAIRE DE VOYAGES SENIOR chez (\"TSAR VOYAGES\", Moscou, RU).",
+    },
+    "work-exp-descr1" : {
+        "ru" : " Создание туристических маршрутов и программ. Взаимодействие с клиентами из англо- и франкоговорящих стран, а также с поставщиками услуг (отели, гиды, транспортные компании, музеи...).",
+        "en" : " Creating travel tourist routes and programs. Interaction with clients from anglophone and francophone countries. " +
+            "Interation with service providers (hotels, guides, transport companies, museums...).",
+        "fr" : " La création des itinéraires et des programmes touristiques de voyage. " +
+            "L'interaction avec des clients des pays anglophones et francophones. L'interaction avec des prestataires de services (hôtels, guides, sociétés de transport, musées...).",
+    },
+    "work-experience3" : {
+        "ru" : "2017 – 2018, СТАРШИЙ МЕНЕДЖЕР ПО ЛОГИСТИКЕ (\"KUEHNE + NAGEL\", Париж, Франция).",
+        "en" : "2017 – 2018, CARGO TRANSPORTATION MANAGER (\"KUEHNE + NAGEL\", Paris, FR).",
+        "fr" : "2017 – 2018, L'AFFRETEUR (\"KUEHNE + NAGEL\", Paris, FR).",
+    },
+    "work-exp-descr2" : {
+        "ru" : " Поиск и заказ траспорта для качественной доставки грузов (медикаменты, автозапчасти) по Европе. Взаимодействие с европейскими клиентами и поставщиками услуг.",
+        "en" : " Ordering transport for good delivery in Europe. Interaction with European clients and service providers.",
+        "fr" : " La recherche du transport pour la livraison des marchandises (auto détails, médicaments) en Europe. L'interaction avec des clients et prestataires européens.",
+    },
+
+
+
+
 
 
 };

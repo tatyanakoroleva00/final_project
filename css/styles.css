@@ -493,6 +493,11 @@ body {
   font-weight: bold;
 }
 
+/*.box-shadow {*/
+/*  !*box-shadow: 1px 1px 15px #00ffff;*!*/
+/*  background: green;*/
+/*}*/
+
 /*******************************************************PORTFOLIO PAGE************************/
 .portfolio__links {
   display: flex;
